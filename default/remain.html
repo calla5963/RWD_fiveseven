@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>FiveSeven</title>
 
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -12,316 +12,345 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <style>   
+        /* #myCarousel  .carousel-item {
+          height: 500px;
+          overflow:hidden;
+        } */
+        #myCarousel .carousel-item img{
+          /* padding-top: 200px; */
+          min-height: 600px;
+          max-height: 768px;
+          margin-top: -200px;
+          object-fit: cover;
+        }
+
+        /* history */
+        .masthead {
+            background-size: cover;
+            min-height: 60vh;
+            position: relative;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+        }
+
+        .masthead h1 {
+            font-size: 4rem;
+        }
+
+        .color-overlay {
+            position: absolute;
+            background-color: rgba(0,0,0,0.2);
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .masthead {
+                min-height: 30vh;
+            }
+            h1 {
+                font-size: calc(1.525rem + 3.3vw);
+            }
+        }
+
+
+    </style>
+
   </head>
   <body>
 
-    <!-- EX13-17 -->
-    <div class="container">
-        <div class="row" style="margin-top: 60px;">
-            <ul class="nav nav-pills justify-content-center nav-justified">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#cardwithform">卡片表單</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#card001">卡片</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#imgthumbnail">縮圖元件</a>
-                </li>
-                <div class="dropdown">
-                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      下拉式選單
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#cardwithform">卡片表單</a></li>
-                      <li><a class="dropdown-item" href="#card001">卡片</a></li>
-                      <li><a class="dropdown-item" href="#imgthumbnail">縮圖元件</a></li>
-                    </ul>
-                </div>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- navbar -->
 
-    <!-- EX18-21 navbar -->
-    <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="https://upload.cc/i1/2022/05/18/F5olXI.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    So funning
-                  </a>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://upload.cc/i1/2022/05/18/F5olXI.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                So funning
+              </a>
 
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#cardwithform">卡片表單</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            下拉式選單
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: lightblue;">
-                                <li><a class="dropdown-item" href="#cardwithform">卡片表單</a></li>
-                                <li><a class="dropdown-item" href="#card001">卡片</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#imgthumbnail">縮圖元件</a></li>
-                            </ul>
-                        </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <!-- EX21-25 -->
-    <div class="container" style="margin-top: 70px;">
-        <div class="row">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination pagination-lg justify-content-center">
-                  <li class="page-item">
-                    <a class="page-link active" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link disabled" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cardwithform">卡片表單</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        下拉式選單
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: lightblue;">
+                            <li><a class="dropdown-item" href="#cardwithform">卡片表單</a></li>
+                            <li><a class="dropdown-item" href="#card001">卡片</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#imgthumbnail">縮圖元件</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
                   </li>
                 </ul>
-            </nav>
-        </div>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- 123 -->
+                <!--123-->
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- 輪播提示 -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
+      <!-- 輪播內容 -->
+      <div class="carousel-inner">
+
+        <dvi class="carousel-item active">
+          <img src="img/carousel001.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>都蘭國</h5>
+          </div>
+        </dvi>
+
+        <dvi class="carousel-item">
+          <img src="img/carousel004.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>新東糖廠文化園區</h5>
+          </div>
+        </dvi>
+
+        <dvi class="carousel-item">
+          <img src="img/carousel006.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>恩娜比亞咖啡</h5>
+          </div>
+        </dvi>
+      </div>
+      <!-- 輪播控制 -->
+      <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+     
+    <!-- history with background and collapse -->
+    <div class="masthead" style="background-image: url('img/pexels-photo-2868665.jpeg');">
+      <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+          <h1>
+              都蘭歷史
+          </h1>
+          <hr>
+          <h3>
+            都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+          </h3>
+          <h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+            與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+            ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+            故，演變為今日的都蘭。
+          </h3>
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              了解更多
+            </button>
+          </p>
+          <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 300px; font-size: 1.3rem; background-color: aqua;">
+                都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
+                山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
+                ，希望藉由傳統文化與山海美景來吸引更多遊客。
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
     
-     <!-- 測試分頁 -->
-    <div class="container">
-        <div class="row">
-            <nav>
-                <div class="nav nav-tabs  nav-pills mb-3 justify-content-center" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                    <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+    <!-- content 昭瑋部分 -->
+    <div class="container-fluid" style="background-color: lightblue;">
+        <div class="col-12-md">
+          <div >
+            <div class="content-main">
+              <div class="content-row">
+                <div class="content-bg">
+                  <h2 class="content-c-heading">都蘭之美<span class="content-c-heading__inner"><span><br/>地區篇</span></span></h2>
+                  <p class="content-text">「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br></p>
+                  <p class="content-btn"><a href="http://www.zztaitung.com/107/dolanandmoon" class="c-btn">前進都蘭</a></p>
                 </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                    hello
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                    world
-                </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                    hope
-                </div>
-                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-                    cold water
-                </div>
-            </div> 
-        </div>
+                <div class="p-top-shop__img p-top-contents__img"><img src="http://www.zztaitung.com/wp-content/uploads/2015/07/%EF%BC%90%EF%BC%911.jpg" srcset="/assets/images/home/shop@2x.png 2x" alt="" width="720" height="597"></div>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
 
     <!-- 回首頁按鈕 -->
     <div style="position: fixed; right: 0px; bottom: 5px;">
-		<a href="#">
-			<img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
-		</a>
-	</div>
-
-    <!-- EX06 07 -->
-    <div class="container" style="margin-top: 20px;">
-        <div class="row" style="width: 768px; background-color: seagreen;">
-            10812126
-        </div>
-        <div class="row" style="width: 1200px; background-color: aquamarine;">
-            黃幃麟
-        </div>
+      <a href="#">
+        <img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
+      </a>
     </div>
 
-    <!-- EX08 -->
-    <div class="container" style="background-color: rgb(55, 144, 156);">
-        <div class="row" style="background-color: seagreen;">
-            <div class="col-6">10812126</div>
-        </div>
-        <div class="row" style="background-color: aquamarine;">
-            <div class="col-6">黃幃麟</div>
-        </div>
-    </div>
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left ">
 
-    <!-- EX01-03 -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-sm-7" style="background-color: salmon;">
-                <h1>左側區塊</h1>
-            </div>
-            <div class="col-md-3 col-sm-5" style="background-color: lightblue;">
-                <h1>右側區塊</h1>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-9 col-sm-7" style="background-color: salmon;">
-                <h1>左側區塊</h1>
-            </div>
-            <div class="col-md-3 col-sm-7" style="background-color: lightblue;">
-                <h1>右側區塊</h1>
-            </div>
-        </div>
-    </div>
-    <!-- EX04-05 -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 order-2" style="background-color: rgb(39, 156, 111);">
-                <h1>左側區塊</h1>
-            </div>
-            <div class="col-md-4 col-sm-4 offset-md-4 order-1" style="background-color: rgb(117, 115, 139);">
-                <h1>右側區塊</h1>
-            </div>
-        </div>
-    </div>
+          <!-- how to get there -->
+          <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+            <p>959台東縣東河鄉29鄰224號</p>
+          </div>
 
-    <!-- EX09 -->
-    <div class="container">
-        <div class="row">
-            <table class="table table-striped">
-                <tr>
-                    <th>學號</th>
-                    <th>姓名</th>
-                    <th>性別</th>
-                    <th>EMAIL</th>
-                </tr>
-                <tr>
-                    <td>10812126</td>
-                    <td>黃幃麟</td>
-                    <td>未知</td>
-                    <td>10812126@gm.nttu.edu.tw</td>
-                </tr>
-                <tr>
-                    <td>10812122</td>
-                    <td>蔡俊彥</td>
-                    <td>未知</td>
-                    <td>10812122@gm.nttu.edu.tw</td>
-                </tr>
-                <tr>
-                    <td>10812107</td>
-                    <td>朱智杰</td>
-                    <td>未知</td>
-                    <td>10812107@gm.nttu.edu.tw</td>
-                </tr>
-                <tr>
-                    <td>10812131</td>
-                    <td>黃昭瑋</td>
-                    <td>未知</td>
-                    <td>10812131@gm.nttu.edu.tw</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i>New York, NY 2333, US
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>10812122@gm.nttu.edu.tw
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> 09xxxx5963
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> no print
+            </p>
+          </div>
 
-    <!-- EX10 card-->
-    <div id="card001" class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://upload.cc/i1/2022/06/08/rBksJe.jpg" class="card-img-top" alt="阿粨">
-                    <div class="card-body">
-                        <h5 class="card-title bg-info">阿粨</h5>
-                        <p class="card-text bg-warning">「阿粨，常被稱為原住民的粽子，黃澄澄的小米，包裹著天然的保鮮膜假酸漿葉，飄香著屬於部落的自然風景。」</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
+          <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> -->
 
-    <!-- EX11 12 卡片+表單-->
-    <form method="post" id="cardwithform" autocomplete="off">
-        <div class="container" style="margin-top: 10px;">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    駐台東玩樂調查特派員
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">請問你在台東最想吃的美食或最想去的地方是？</h5>
-                    <div class="form-group">
-                        <!-- select -->
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected value="food1">鐵花村</option>
-                            <option value="food2">阿粨</option>
-                            <option value="food3">新生小吃店</option>
-                            <option value="food4">天空之鏡</option>
-                        </select>
-                        <!-- textarea -->
-                        <label for="additionalcontent" class="form-label" style="margin-top: 5px;">可以上列沒有的東西喔！</label>
-                        <textarea class="form-control" id="additionalcontent" rows="3"></textarea>
-                    </div>
-                    
-                </div>
-                <div class="card-footer">
-                    <button type="button" class="btn btn-outline-primary">傳送問卷</button>
-                </div>
-              </div>
-        </div>
-    </form>
-    
-    <!-- EX13 縮圖元件 -->
-    <div id="imgthumbnail" class="container" style="margin-top: 10px;">
-        <div class="row">
-            
-            <div class="col-12 col-md-4">
-                <div class="img-thumbnail">
-                    <img src="https://upload.cc/i1/2022/06/08/rBksJe.jpg" style="height: 200px;" class="img-thumbnail">
-                    <h3>阿粨</h3>
-                    <p>「阿粨，常被稱為原住民的粽子，黃澄澄的小米，包裹著天然的保鮮膜假酸漿葉，飄香著屬於部落的自然風景。」</p>
-                    <a href="https://smiletaiwan.cw.com.tw/article/2174" target="_blank" class="btn btn-success">詳細資料</a>
-                </div>
-            </div>
+          
+          
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
+            <p>text</p>
+          </div>
 
-            <div class="col-12 col-md-4">
-                <div class="img-thumbnail">
-                    <img src="https://upload.cc/i1/2022/06/08/S72XtD.jpg" style="height: 200px;" class="img-thumbnail">
-                    <h3>果珍濃台東水果珍奶</h3>
-                    <p>在有名的榕樹下米苔目旁邊的「果珍濃台東水果珍奶」，現打果汁完全不加水，堅持百分之百的天然手工飲料，一杯才賣60元。</p>
-                    <a href="https://www.instagram.com/p/CXY7nAkPl6H/?utm_source=ig_embed&ig_rid=d1bda1c4-6a89-418a-bc7b-4db48a4e6c0c" target="_blank" class="btn btn-success">詳細資料</a>
-                </div>
-            </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> TheProviders</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Creativity</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Sourcefiles</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> bootstrap 5 alpha</a>
+            </p>
+          </div>
 
-            <div class="col-12 col-md-4">
-                <div class="img-thumbnail">
-                    <img src="https://upload.cc/i1/2022/06/08/8Yfz2c.jpg" style="height: 200px;" class="img-thumbnail">
-                    <h3>Yeh's Fish 葉氏海鮮</h3>
-                    <p>不但新鮮且價格實惠，可依據自己的份量喜好選擇100/150/200等價位。</p>
-                    <a href="https://www.instagram.com/p/CXSpknmv-br/?utm_source=ig_embed&ig_rid=4e37fbe0-9a79-437c-b935-bdef7295bb50" target="_blank" class="btn btn-success">詳細資料</a>
-                </div>
-            </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> 123 Account</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Become an Affiliates</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i>New York, NY 2333, US
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>10812122@gm.nttu.edu.tw
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> 09xxxx5963
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> no print
+            </p>
+          </div>
+          
+
         </div>
-    </div>
-    
-    
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              Copyright 2022 All rights reserved by:
+              <a href="#" style="text-decoration: none;">
+                <strong class="text-warning">The FiveSeven</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>

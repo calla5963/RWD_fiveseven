@@ -12,7 +12,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link   rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
     <style>   
         /* #myCarousel  .carousel-item {
           height: 500px;
@@ -26,46 +27,6 @@
           object-fit: cover;
         }
 
-        /* content1 */
-        .content-main {
-            width: 100%;
-            max-width: auto;
-            padding-left: 20px;padding-right: 20px;
-            margin:0 0 auto auto;
-        }
-        .content-row {
-            display: flex;
-        }
-        .content-bg {
-            width: 470px;
-            max-width: 100%;
-            padding: 60px 40px 0;
-        }
-        .content-c-heading {
-            text-align: center;
-            color: #4f2e13;
-            font-size: 44px;
-            font-size: 4.4rem;
-            letter-spacing: 0.15em;
-        }
-        .content-text {
-            margin-top: 3em;
-            font-size: 16px;
-            font-size: 1.6rem;
-            line-height: 2.5;
-            letter-spacing: 0.15em;
-        }
-        .content-btn {
-            margin-top: 50px;
-            text-align: center;
-        }
-        .p-top-shop__img {
-            margin-right: -1000px;
-            margin-left: 100px;
-            margin-top: 250px;
-        }
-
-        
         /* history */
         .masthead {
             background-size: cover;
@@ -75,7 +36,7 @@
             text-shadow: 2px 2px 2px rgba(0,0,0,.5);
         }
 
-        h1 {
+        .masthead h1 {
             font-size: 4rem;
         }
 
@@ -94,106 +55,12 @@
                 font-size: calc(1.525rem + 3.3vw);
             }
         }
-        /* 昭 */
-        .main {
-        width: 100%;
-        max-width: auto;
-        padding-left: 20px;padding-right: 20px;
-        margin:30px 0 auto auto;}
-.row {
-    display: flex;
-    background-image: linear-gradient(rgb(169, 231, 252), rgba(223, 221, 202, 0.575));
-}
-.bg {
-    width: 800px;
-    max-width: 100%;
-    padding: 60px 40px 0;
-}
-.c-heading {
-    text-align: center;
-    color: #4f2e13;
-    font-size: 44px;
-    font-size: 4.4rem;
-    letter-spacing: 0.15em;
-}
-.text {
-    margin-top: 3em;
-    font-size: 16px;
-    font-size: 1.6rem;
-    line-height: 2.5;
-    letter-spacing: 0.15em;
-    
-}
-.btn {
 
-    margin-top: 50px;
-    margin-left: 300px;
-    text-align: center;
-    background-color: rgb(199, 250, 183);
-    border: 2px solid #9d89f5; /* Green */
-}
-.btn {
-  transition-duration: 0.4s;
-}
 
-.btn:hover {
-  background-color: #f5ea5ab2; /* Green */
- 
-}
-.p-top-shop__img {
-    margin-right: -1000px;
-    margin-left: 100px;
-    margin-top: 250px;
-}
-
-.animate__animated.animate__bounce {
-  --animate-duration: 1s;
-}
-.animate__animated.animate__fadeInLeft {
-  --animate-duration: 3s;
-}
-
-.figure {
-        position: relative;
-        width: auto; /* can be omitted for a regular non-lazy image */
-        max-width: 100%;
-    }
-
-.animate__slideInRight:hover {
-    -webkit-animation: slideInRight 1s;
-    animation: slideInRight 1s;
-}
-
-#cf {
-  position:relative;
-  height:600px;
-  width:720px;
-  margin:0 auto;
-}
-
-#cf img {
-  position:absolute;
-
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#cf img.top:hover {
-  opacity:0;
-}
- /* 昭結束 */
     </style>
 
   </head>
   <body>
-    <!-- AOS 滾動庫 -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-   AOS.init();
-  </script>
 
     <!-- navbar -->
 
@@ -321,35 +188,169 @@
       </div>
     </div>
     
-    <!-- content1 -->
-    <div data-aos="zoom-in"   data-aos-duration="3000">
-      <div class="main"data-aos="fade-up" >
-        <div class="row" >
-          <div class="bg">
-            <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in"data-aos-dalay="3000" data-aos-anchor-placement="center-center">都蘭之美<span class="c-heading__inner"><span><br/>自然生態</span></span></h2>
-            <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"  data-aos-anchor-placement="center-bottom"  >「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br></h3>
-            <p class="btn"><a href="http://www.zztaitung.com/107/dolanandmoon" class="c-btn">前進都蘭</a></p>
+    <!-- content 昭瑋部分 -->
+    <div class="container-fluid" style="background-color: lightblue;">
+        <div class="col-12-md">
+          <div >
+            <div class="content-main">
+              <div class="content-row">
+                <div class="content-bg">
+                  <h2 class="content-c-heading">都蘭之美<span class="content-c-heading__inner"><span><br/>地區篇</span></span></h2>
+                  <p class="content-text">「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br></p>
+                  <p class="content-btn"><a href="http://www.zztaitung.com/107/dolanandmoon" class="c-btn">前進都蘭</a></p>
+                </div>
+                <div class="p-top-shop__img p-top-contents__img"><img src="http://www.zztaitung.com/wp-content/uploads/2015/07/%EF%BC%90%EF%BC%911.jpg" srcset="/assets/images/home/shop@2x.png 2x" alt="" width="720" height="597"></div>
+              </div>
+            </div>
           </div>
-          <br/>
-          <div class="p-top-shop__img p-top-contents__img figure" data-aos="flip-right"  data-aos-anchor-placement="bottom-bottom"  id="cf" >
-            <br><br><br><br>
-            <img class="animate__animated animate__slideInRight image-main " src="http://www.zztaitung.com/wp-content/uploads/2015/07/%EF%BC%90%EF%BC%911.jpg"  width="720" height="700"> 
-            <img class="top animate__animated animate__slideInRight image-main" src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791" width="720" height="700" />
-          </div>
-        </div>
       </div>
     </div>
 
     <!-- 回首頁按鈕 -->
     <div style="position: fixed; right: 0px; bottom: 5px;">
-		<a href="#">
-			<img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
-		</a>
-	</div>
+      <a href="#">
+        <img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
+      </a>
+    </div>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-     
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left ">
+
+          <!-- how to get there -->
+          <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+            <p>959台東縣東河鄉29鄰224號</p>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i>New York, NY 2333, US
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>10812122@gm.nttu.edu.tw
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> 09xxxx5963
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> no print
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> -->
+
+          
+          
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
+            <p>text</p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> TheProviders</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Creativity</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Sourcefiles</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> bootstrap 5 alpha</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> 123 Account</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Become an Affiliates</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"> Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i>New York, NY 2333, US
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>10812122@gm.nttu.edu.tw
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> 09xxxx5963
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> no print
+            </p>
+          </div>
+          
+
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              Copyright 2022 All rights reserved by:
+              <a href="#" style="text-decoration: none;">
+                <strong class="text-warning">The FiveSeven</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
