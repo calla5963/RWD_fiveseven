@@ -28,24 +28,41 @@
             min-height: 60vh;
             position: relative;
             background-repeat: no-repeat;
+            font-size: 1.2em;
             color: rgb(255, 255, 255);
             text-shadow: 2px 2px 2px rgba(0,0,0,.5);
         }
         .masthead h1 {
-            font-size: 4rem;
+          font-size: 3em;
+            position: relative;
+        }
+        .masthead h3 {
+          font-size: 1.2em;
+            position: relative;
         }
         .color-overlay {
-            position: absolute;
+            position: relative;
             background-color: rgba(0,0,0,0.2);
             height: 100%;
             width: 100%;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             .masthead {
+              position: absolute;
                 min-height: 30vh;
+                font-size:smaller;
+                color:pink;
             }
             .masthead h1 {
-                font-size: calc(1.525rem + 3.3vw);
+              position: relative;
+              /*  font-size: calc(1.525rem + 3.3vw);  測試 */
+                font-size:smaller;
+                color:white;
+            }
+            .masthead h3 {
+              position: relative;
+                font-size:smaller;
+                color:white;
             }
         }
 
@@ -148,24 +165,32 @@
      
     <!-- history with background and collapse -->
     <div class="masthead" style="background-image: url('img/pexels-photo-2868665.jpeg');">
-      <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
-          <h1>
-              都蘭歷史
-          </h1>
+      <div class="color-overlay d-flex flex-column align-items-start justify-content-center">
+          <div class="container-row ">
+            <h1 >
+                都蘭歷史
+            </h1>
+        </div>
           <hr>
-          <h3>
-            都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
-          </h3>
-          <h3>
-            &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
-            與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
-            ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
-            故，演變為今日的都蘭。
-          </h3>
-          <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-              了解更多
-            </button>
+          <div class="container-row">
+            <div class="row">
+              <h3>
+                都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+              </h3>
+            </div>
+            <div class="row">
+              <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+                與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+                ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+                故，演變為今日的都蘭。
+              </h3>
+          </div>
+        </div>
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                了解更多
+              </button>
           </p>
           <div style="min-height: 120px;">
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
