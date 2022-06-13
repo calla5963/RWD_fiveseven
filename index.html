@@ -95,12 +95,15 @@
             }
         }
         /* 昭 */
-        .main {
-        width: 100%;
-        max-width: auto;
-        padding-left: 20px;padding-right: 20px;
-        margin:30px 0 auto auto;}
-.row {
+.main {
+    width: 100%;
+    max-width: auto;
+    padding-left: 20px;padding-right: 20px;
+    margin:30px 0 auto auto;
+    
+}
+#cf img{max-width:100%;height:auto;width: 100%;}
+.row2 {
     display: flex;
     background-image: linear-gradient(rgb(169, 231, 252), rgba(223, 221, 202, 0.575));
 }
@@ -124,7 +127,7 @@
     letter-spacing: 0.15em;
     
 }
-.btn {
+.btn2 {
 
     margin-top: 50px;
     margin-left: 300px;
@@ -132,11 +135,11 @@
     background-color: rgb(199, 250, 183);
     border: 2px solid #9d89f5; /* Green */
 }
-.btn {
+.btn2 {
   transition-duration: 0.4s;
 }
 
-.btn:hover {
+.btn2:hover {
   background-color: #f5ea5ab2; /* Green */
  
 }
@@ -159,21 +162,20 @@
         max-width: 100%;
     }
 
-.animate__slideInRight:hover {
+    .animate__slideInRight:hover {
     -webkit-animation: slideInRight 1s;
     animation: slideInRight 1s;
 }
 
 #cf {
   position:relative;
-  height:600px;
+  height:1000px;
   width:720px;
   margin:0 auto;
 }
 
 #cf img {
   position:absolute;
-
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -181,7 +183,10 @@
 }
 
 #cf img.top:hover {
-  opacity:0;
+  opacity:0; 
+}
+#cf img.top {
+  opacity:1; 
 }
  /* 昭結束 */
     </style>
@@ -324,21 +329,23 @@
     <!-- content1 -->
     <div data-aos="zoom-in"   data-aos-duration="3000">
       <div class="main"data-aos="fade-up" >
-        <div class="row" >
-          <div class="bg">
-            <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in"data-aos-dalay="3000" data-aos-anchor-placement="center-center">都蘭之美<span class="c-heading__inner"><span><br/>自然生態</span></span></h2>
-            <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"  data-aos-anchor-placement="center-bottom"  >「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br></h3>
-            <p class="btn"><a href="http://www.zztaitung.com/107/dolanandmoon" class="c-btn">前進都蘭</a></p>
-          </div>
-          <br/>
-          <div class="p-top-shop__img p-top-contents__img figure" data-aos="flip-right"  data-aos-anchor-placement="bottom-bottom"  id="cf" >
-            <br><br><br><br>
+        <div class="row2" >
+          <div class="p-top-shop__img p-top-contents__img figure col-md-6" data-aos="fade-down-right"  data-aos-anchor-placement="center-bottom"  data-aos-dalay="3000"id="cf" >
+            <br><br><br><br><br><br><br><br><br><br>
             <img class="animate__animated animate__slideInRight image-main " src="http://www.zztaitung.com/wp-content/uploads/2015/07/%EF%BC%90%EF%BC%911.jpg"  width="720" height="700"> 
             <img class="top animate__animated animate__slideInRight image-main" src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791" width="720" height="700" />
           </div>
+          <div class="bg col-md-6">
+            <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in"data-aos-dalay="3000" data-aos-anchor-placement="center-center">都蘭之美<span class="c-heading__inner"><span><br/>自然生態</span></span></h2>
+            <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"  data-aos-anchor-placement="center-bottom"  >「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br></h3>
+            <p class="btn2 "><a href="http://www.zztaitung.com/107/dolanandmoon" class="c-btn">前進都蘭</a></p>
+          </div>
+          <br/>
+          
         </div>
       </div>
     </div>
+    
 
     <!-- 回首頁按鈕 -->
     <div style="position: fixed; right: 0px; bottom: 5px;">
