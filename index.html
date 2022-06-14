@@ -19,7 +19,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-    <style>   
+    <style>
+        #myCarousel{
+          z-index: 1;
+        }
         #myCarousel .carousel-item img{
           min-height: 600px;
           max-height: 768px;
@@ -68,11 +71,325 @@
             }
         }
 
+        /* 以下nav */
+        nav{
+          z-index: 5;
+        }
+        .nav-mine li{
+          position: relative;
+        }
+        .nav-mine li.active a::after{
+          height: 80px;
+          opacity: 1;
+          margin: 8px auto;
+        }
+        .nav-mine li:nth-child(1):hover::before{
+          content: "第1個";
+          position: absolute;
+          width: max-content;
+          left: 30px;
+          top: -2px;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          padding: 4px;
+          padding-right: 10px;
+          border-radius: 5px;
+        }
+        .nav-mine li:nth-child(2):hover::before{
+          content: "第2個";
+          position: absolute;
+          width: max-content;
+          left: 30px;
+          top: -2px;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          padding: 4px;
+          padding-right: 10px;
+          border-radius: 5px;
+        }
+        .nav-mine li:nth-child(3):hover::before{
+          content: "第3個";
+          position: absolute;
+          width: max-content;
+          left: 30px;
+          top: -2px;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          padding: 4px;
+          padding-right: 10px;
+          border-radius: 5px;
+        }
+        .nav-mine li:nth-child(4):hover::before{
+          content: "第4個";
+          position: absolute;
+          width: max-content;
+          left: 30px;
+          top: -2px;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          padding: 4px;
+          padding-right: 10px;
+          border-radius: 5px;
+        }
+        .nav-mine li:nth-child(5):hover::before{
+          content: "第5個";
+          position: absolute;
+          width: max-content;
+          left: 30px;
+          top: -2px;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          padding: 4px;
+          padding-right: 10px;
+          border-radius: 5px;
+        }
+        .nav-mine li:nth-child(6):hover::before{
+          content: "第6個";
+          position: absolute;
+          width: max-content;
+          left: 30px;
+          top: -2px;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          padding: 4px;
+          padding-right: 10px;
+          border-radius: 5px;
+        }
+        .nav-mine .nav-link{
+          padding: 0;
+          width: 30px;
+          height: 30px;
+
+          box-sizing: border-box;
+          background-color: rgba(0, 0, 0, 0.5);
+          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+        .nav-mine .active{
+          padding: 0;
+          width: 30px;
+          height: 30px;
+          content: "";
+          background: url('https://upload.cc/i1/2022/06/14/7XqIU8.gif') no-repeat center center;
+          filter: grayscale(1);
+          transition: all .5s;
+        }
+        /* 以上nav */
+
+        /* scrollspy article */
+        .article{
+          width: 100%;
+          background-size: cover;
+          background-position: center center;
+        }
 
     </style>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="10">
     
+    <nav id="nav" class="position-fixed top-0 start-0 h-100 d-flex align-items-center ms-4">
+      <ul class="nav nav-mine flex-column">
+        <li class="nav-item mb-2"><a href="#article1" class="nav-link active"></a></li>
+        <li class="nav-item mb-2"><a href="#article2" class="nav-link"></a></li>
+        <li class="nav-item mb-2"><a href="#article3" class="nav-link"></a></li>
+        <li class="nav-item mb-2"><a href="#article4" class="nav-link"></a></li>
+        <li class="nav-item mb-2"><a href="#article5" class="nav-link"></a></li>
+        <li class="nav-item mb-2"><a href="#article6" class="nav-link"></a></li>
+      </ul>
+    </nav>
+
+    <section>
+
+      <article id="article1" class="article article1">
+        <div class="article-title">
+          <!-- carousel -->
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- 輪播提示 -->
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <!-- 輪播內容 -->
+            <div class="carousel-inner">
+
+              <dvi class="carousel-item active">
+                <img src="img/carousel001.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>都蘭國</h5>
+                </div>
+              </dvi>
+
+              <dvi class="carousel-item">
+                <img src="img/carousel004.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>新東糖廠文化園區</h5>
+                </div>
+              </dvi>
+
+              <dvi class="carousel-item">
+                <img src="img/carousel006.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>恩娜比亞咖啡</h5>
+                </div>
+              </dvi>
+            </div>
+            <!-- 輪播控制 -->
+            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article id="article2" class="article article2">
+        <div class="article-title">
+          <!-- history with background and collapse -->
+          <div class="masthead" style="background-image: url('img/都蘭國70.jpg'); ">
+            <div class="color-overlay d-flex flex-column  align-items-start justify-content-center">
+                <div class="container-row ">
+                  <h1 style="margin-top: 20px;">
+                    <img src="img/history.png" style="width:10%;height:10%;filter:invert(100%)" />              
+                      都蘭歷史
+                  </h1>
+                </div>
+                <hr>
+                <div data-aos="fade-right"data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                <div class="container-row">
+                  <div class="row">
+                    <h3>
+                      都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+                    </h3>
+                  </div>
+                  <div class="row" >
+                    <h3>
+                      &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+                      與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+                      ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+                      故，演變為今日的都蘭。
+                    </h3>
+                </div>
+              </div>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      了解更多
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 300px; font-size: 1.3rem; background-color: rgb(32, 0, 107);">
+                      都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
+                      山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
+                      ，希望藉由傳統文化與山海美景來吸引更多遊客。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="article3" class="article article3">
+        <div class="article-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ex repellendus natus omnis quia magni saepe quae nemo quas, consectetur commodi quod debitis consequuntur aliquam vero a nisi, eum molestias non exercitationem. Totam dolorem dolor reiciendis fugiat sapiente commodi ipsa omnis ut magni! Repellendus voluptatum eligendi ratione consectetur voluptatem rem sequi ipsa mollitia, fugiat est deleniti itaque optio soluta, voluptate eum sit quam aut quos. Iste iure architecto possimus quaerat quis labore vero voluptate quo sequi omnis, dignissimos, molestias officia totam fugit facilis beatae exercitationem doloribus saepe aspernatur, at enim nisi repellat eius consequuntur! Recusandae illum deserunt officia numquam iste obcaecati odio cumque consequatur quia aperiam deleniti quisquam dicta, quas incidunt saepe ab. Mollitia praesentium ullam quo corporis molestias, explicabo non dicta doloremque laborum aut ipsam molestiae velit recusandae commodi quam officiis, beatae possimus quisquam voluptates quibusdam voluptas. Neque assumenda molestiae natus necessitatibus, cupiditate repellat impedit eligendi numquam minima quasi minus illo maxime expedita ratione amet iusto deleniti? Fugit eos recusandae modi omnis! Hic sunt reprehenderit quos. Quisquam, eaque veniam cumque consequuntur sint ad delectus quaerat quia, et est, nulla odio illo recusandae accusantium obcaecati fugit. Iste blanditiis nam voluptate nesciunt possimus deleniti quia veritatis id nobis ut! Qui incidunt quos quae expedita rerum, deleniti ullam temporibus quidem odio atque accusantium aperiam sapiente soluta voluptate! Officia perferendis molestias, mollitia reiciendis quae distinctio laborum possimus voluptas repellendus enim excepturi inventore tempora est ab, molestiae aut recusandae, labore accusantium sunt ratione saepe itaque. Cumque reiciendis repudiandae, dicta commodi expedita et at vel nisi tempora non animi aspernatur dolores perferendis, corrupti magnam, temporibus nostrum soluta maxime obcaecati. Expedita nihil natus blanditiis sunt praesentium quo modi id enim, odio iste commodi iure cupiditate omnis minus magni beatae distinctio, adipisci dolorem similique reprehenderit laboriosam totam doloremque perspiciatis illum. Accusamus officia saepe distinctio nobis quis deleniti unde in optio ea reprehenderit provident nihil esse totam voluptas, tenetur delectus maiores itaque corrupti. Nesciunt ad rerum odio error consequatur mollitia perspiciatis est dignissimos deleniti expedita autem, odit voluptas ullam officiis voluptate unde vel! Rem asperiores, id pariatur consectetur enim nisi ipsa dolorem saepe cumque accusantium reiciendis cum, sequi libero provident neque ipsum. Praesentium repellendus necessitatibus impedit harum temporibus libero quaerat eligendi architecto, beatae omnis unde enim officia qui sint sunt quae, atque suscipit nihil odio? Itaque eum tempora est, sed blanditiis provident. Earum quas, blanditiis eos modi voluptas voluptatem totam quod vel expedita labore? Quae temporibus id in minus alias deleniti dolore facilis consequatur earum minima perspiciatis exercitationem, ea nostrum dignissimos sequi odio voluptatum voluptatem ratione itaque voluptas a nobis. Dolorum hic labore voluptas fugiat, facere magni nulla unde obcaecati iure minima accusamus deserunt nemo veniam omnis minus, quia dicta debitis? Facilis dolor vero incidunt laboriosam accusantium unde quia quaerat aut vitae esse nihil repellat, quod at, velit aspernatur quos fugiat! Atque perspiciatis et maiores id numquam. Voluptates fuga, earum aut ipsum rerum eius tempora, rem nostrum iusto et hic architecto cumque accusamus autem beatae sapiente dolores? Odit adipisci aspernatur ducimus sit doloribus eaque, suscipit ad aliquid commodi.
+        </div>
+      </article>
+
+      <article id="article4" class="article article4">
+        <div class="article-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ex repellendus natus omnis quia magni saepe quae nemo quas, consectetur commodi quod debitis consequuntur aliquam vero a nisi, eum molestias non exercitationem. Totam dolorem dolor reiciendis fugiat sapiente commodi ipsa omnis ut magni! Repellendus voluptatum eligendi ratione consectetur voluptatem rem sequi ipsa mollitia, fugiat est deleniti itaque optio soluta, voluptate eum sit quam aut quos. Iste iure architecto possimus quaerat quis labore vero voluptate quo sequi omnis, dignissimos, molestias officia totam fugit facilis beatae exercitationem doloribus saepe aspernatur, at enim nisi repellat eius consequuntur! Recusandae illum deserunt officia numquam iste obcaecati odio cumque consequatur quia aperiam deleniti quisquam dicta, quas incidunt saepe ab. Mollitia praesentium ullam quo corporis molestias, explicabo non dicta doloremque laborum aut ipsam molestiae velit recusandae commodi quam officiis, beatae possimus quisquam voluptates quibusdam voluptas. Neque assumenda molestiae natus necessitatibus, cupiditate repellat impedit eligendi numquam minima quasi minus illo maxime expedita ratione amet iusto deleniti? Fugit eos recusandae modi omnis! Hic sunt reprehenderit quos. Quisquam, eaque veniam cumque consequuntur sint ad delectus quaerat quia, et est, nulla odio illo recusandae accusantium obcaecati fugit. Iste blanditiis nam voluptate nesciunt possimus deleniti quia veritatis id nobis ut! Qui incidunt quos quae expedita rerum, deleniti ullam temporibus quidem odio atque accusantium aperiam sapiente soluta voluptate! Officia perferendis molestias, mollitia reiciendis quae distinctio laborum possimus voluptas repellendus enim excepturi inventore tempora est ab, molestiae aut recusandae, labore accusantium sunt ratione saepe itaque. Cumque reiciendis repudiandae, dicta commodi expedita et at vel nisi tempora non animi aspernatur dolores perferendis, corrupti magnam, temporibus nostrum soluta maxime obcaecati. Expedita nihil natus blanditiis sunt praesentium quo modi id enim, odio iste commodi iure cupiditate omnis minus magni beatae distinctio, adipisci dolorem similique reprehenderit laboriosam totam doloremque perspiciatis illum. Accusamus officia saepe distinctio nobis quis deleniti unde in optio ea reprehenderit provident nihil esse totam voluptas, tenetur delectus maiores itaque corrupti. Nesciunt ad rerum odio error consequatur mollitia perspiciatis est dignissimos deleniti expedita autem, odit voluptas ullam officiis voluptate unde vel! Rem asperiores, id pariatur consectetur enim nisi ipsa dolorem saepe cumque accusantium reiciendis cum, sequi libero provident neque ipsum. Praesentium repellendus necessitatibus impedit harum temporibus libero quaerat eligendi architecto, beatae omnis unde enim officia qui sint sunt quae, atque suscipit nihil odio? Itaque eum tempora est, sed blanditiis provident. Earum quas, blanditiis eos modi voluptas voluptatem totam quod vel expedita labore? Quae temporibus id in minus alias deleniti dolore facilis consequatur earum minima perspiciatis exercitationem, ea nostrum dignissimos sequi odio voluptatum voluptatem ratione itaque voluptas a nobis. Dolorum hic labore voluptas fugiat, facere magni nulla unde obcaecati iure minima accusamus deserunt nemo veniam omnis minus, quia dicta debitis? Facilis dolor vero incidunt laboriosam accusantium unde quia quaerat aut vitae esse nihil repellat, quod at, velit aspernatur quos fugiat! Atque perspiciatis et maiores id numquam. Voluptates fuga, earum aut ipsum rerum eius tempora, rem nostrum iusto et hic architecto cumque accusamus autem beatae sapiente dolores? Odit adipisci aspernatur ducimus sit doloribus eaque, suscipit ad aliquid commodi.
+        </div>
+      </article>
+
+      <article id="article5" class="article article5">
+        <div class="article-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ex repellendus natus omnis quia magni saepe quae nemo quas, consectetur commodi quod debitis consequuntur aliquam vero a nisi, eum molestias non exercitationem. Totam dolorem dolor reiciendis fugiat sapiente commodi ipsa omnis ut magni! Repellendus voluptatum eligendi ratione consectetur voluptatem rem sequi ipsa mollitia, fugiat est deleniti itaque optio soluta, voluptate eum sit quam aut quos. Iste iure architecto possimus quaerat quis labore vero voluptate quo sequi omnis, dignissimos, molestias officia totam fugit facilis beatae exercitationem doloribus saepe aspernatur, at enim nisi repellat eius consequuntur! Recusandae illum deserunt officia numquam iste obcaecati odio cumque consequatur quia aperiam deleniti quisquam dicta, quas incidunt saepe ab. Mollitia praesentium ullam quo corporis molestias, explicabo non dicta doloremque laborum aut ipsam molestiae velit recusandae commodi quam officiis, beatae possimus quisquam voluptates quibusdam voluptas. Neque assumenda molestiae natus necessitatibus, cupiditate repellat impedit eligendi numquam minima quasi minus illo maxime expedita ratione amet iusto deleniti? Fugit eos recusandae modi omnis! Hic sunt reprehenderit quos. Quisquam, eaque veniam cumque consequuntur sint ad delectus quaerat quia, et est, nulla odio illo recusandae accusantium obcaecati fugit. Iste blanditiis nam voluptate nesciunt possimus deleniti quia veritatis id nobis ut! Qui incidunt quos quae expedita rerum, deleniti ullam temporibus quidem odio atque accusantium aperiam sapiente soluta voluptate! Officia perferendis molestias, mollitia reiciendis quae distinctio laborum possimus voluptas repellendus enim excepturi inventore tempora est ab, molestiae aut recusandae, labore accusantium sunt ratione saepe itaque. Cumque reiciendis repudiandae, dicta commodi expedita et at vel nisi tempora non animi aspernatur dolores perferendis, corrupti magnam, temporibus nostrum soluta maxime obcaecati. Expedita nihil natus blanditiis sunt praesentium quo modi id enim, odio iste commodi iure cupiditate omnis minus magni beatae distinctio, adipisci dolorem similique reprehenderit laboriosam totam doloremque perspiciatis illum. Accusamus officia saepe distinctio nobis quis deleniti unde in optio ea reprehenderit provident nihil esse totam voluptas, tenetur delectus maiores itaque corrupti. Nesciunt ad rerum odio error consequatur mollitia perspiciatis est dignissimos deleniti expedita autem, odit voluptas ullam officiis voluptate unde vel! Rem asperiores, id pariatur consectetur enim nisi ipsa dolorem saepe cumque accusantium reiciendis cum, sequi libero provident neque ipsum. Praesentium repellendus necessitatibus impedit harum temporibus libero quaerat eligendi architecto, beatae omnis unde enim officia qui sint sunt quae, atque suscipit nihil odio? Itaque eum tempora est, sed blanditiis provident. Earum quas, blanditiis eos modi voluptas voluptatem totam quod vel expedita labore? Quae temporibus id in minus alias deleniti dolore facilis consequatur earum minima perspiciatis exercitationem, ea nostrum dignissimos sequi odio voluptatum voluptatem ratione itaque voluptas a nobis. Dolorum hic labore voluptas fugiat, facere magni nulla unde obcaecati iure minima accusamus deserunt nemo veniam omnis minus, quia dicta debitis? Facilis dolor vero incidunt laboriosam accusantium unde quia quaerat aut vitae esse nihil repellat, quod at, velit aspernatur quos fugiat! Atque perspiciatis et maiores id numquam. Voluptates fuga, earum aut ipsum rerum eius tempora, rem nostrum iusto et hic architecto cumque accusamus autem beatae sapiente dolores? Odit adipisci aspernatur ducimus sit doloribus eaque, suscipit ad aliquid commodi.
+        </div>
+      </article>
+
+      <article id="article6" class="article article6">
+        <div class="article-title">
+          <!-- footer -->
+          <footer class="bg-dark text-white pt-5 pb-4">
+            <div class="container text-center">
+              <div class="row text-center align-items-center text-md-start">
+
+                <!-- how to get there -->
+                <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+                  <p>
+                    <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
+                    <i class="fas fas fa-map-marker-alt mr-3">
+                      <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528" target="_blank">
+                        點我導航
+                      </a>
+                    </i>
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
+                  </p>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i> +886 89531864
+                  </p>
+                  <p>
+                    <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/" target="_blank">https://www.atolan-style.com/</a>
+                  </p>
+                </div>
+
+                <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+              </div>
+
+              <hr class="mb-4">
+
+              <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                  <p class="text-lg-start">
+                    Copyright 2022 All rights reserved by:
+                    <a href="#" style="text-decoration: none;">
+                      <strong class="text-warning">The FiveSeven</strong>
+                    </a>
+                  </p>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                  <div class="text-center text-md-end">
+
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/atolan.malakapahay" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.instagram.com/atolan_style/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                          <i class="fab fa-youtube"></i>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </article>
+
+    </section>
+
     <!-- navbar -->
     <div class="row">
         <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
@@ -122,92 +439,9 @@
     </div>
 
     
-    <!-- carousel -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <!-- 輪播提示 -->
-      <ol class="carousel-indicators">
-        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-      </ol>
-      <!-- 輪播內容 -->
-      <div class="carousel-inner">
-
-        <dvi class="carousel-item active">
-          <img src="img/carousel001.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>都蘭國</h5>
-          </div>
-        </dvi>
-
-        <dvi class="carousel-item">
-          <img src="img/carousel004.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>新東糖廠文化園區</h5>
-          </div>
-        </dvi>
-
-        <dvi class="carousel-item">
-          <img src="img/carousel006.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>恩娜比亞咖啡</h5>
-          </div>
-        </dvi>
-      </div>
-      <!-- 輪播控制 -->
-      <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
-    </div>
+    
      
-    <!-- history with background and collapse -->
-    <div class="masthead" style="background-image: url('img/都蘭國70.png'); ">
-      <div class="color-overlay d-flex flex-column  align-items-start justify-content-center">
-          <div class="container-row ">
-            <h1 style="margin-top: 20px;">
-              <img src="img/history.png" style="width:10%;height:10%;filter:invert(100%)" />              
-                都蘭歷史
-            </h1>
-          </div>
-          <hr>
-          <div data-aos="fade-right"data-aos-anchor-placement="top-bottom" data-aos-delay="250">
-          <div class="container-row">
-            <div class="row">
-              <h3>
-                都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
-              </h3>
-            </div>
-            <div class="row" >
-              <h3>
-                &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
-                與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
-                ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
-                故，演變為今日的都蘭。
-              </h3>
-          </div>
-        </div>
-            <p>
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                了解更多
-              </button>
-          </p>
-          <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px; font-size: 1.3rem; background-color: rgb(32, 0, 107);">
-                都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
-                山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
-                ，希望藉由傳統文化與山海美景來吸引更多遊客。
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     
     <!-- content 昭瑋部分 -->
     <div class="container-fluid" style="background-color: lightblue;">
@@ -233,79 +467,6 @@
         <img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
       </a>
     </div>
-
-    <!-- footer -->
-    <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container text-center">
-        <div class="row text-center align-items-center text-md-start">
-
-          <!-- how to get there -->
-          <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
-            <p>
-              <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
-              <i class="fas fas fa-map-marker-alt mr-3">
-                <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528" target="_blank">
-                  點我導航
-                </a>
-              </i>
-            </p>
-            <p>
-              <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
-            </p>
-            <p>
-              <i class="fas fa-phone mr-3"></i> +886 89531864
-            </p>
-            <p>
-              <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/" target="_blank">https://www.atolan-style.com/</a>
-            </p>
-          </div>
-
-          <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-        </div>
-
-        <hr class="mb-4">
-
-        <div class="row align-items-center">
-          <div class="col-md-7 col-lg-8">
-            <p class="text-lg-start">
-              Copyright 2022 All rights reserved by:
-              <a href="#" style="text-decoration: none;">
-                <strong class="text-warning">The FiveSeven</strong>
-              </a>
-            </p>
-          </div>
-
-          <div class="col-md-5 col-lg-4">
-            <div class="text-center text-md-end">
-
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/atolan.malakapahay" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/atolan_style/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
 
     <script src="https:/code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--AOS script-->
