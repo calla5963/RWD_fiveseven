@@ -54,28 +54,26 @@
         @media (max-width: 767px) {
             .masthead {
               position: absolute;
-                min-height: 30vh;
-                font-size:smaller;
-                color:pink;
+              min-height: 30vh;
+              font-size:smaller;
+              color:pink;
             }
             .masthead h1 {
               position: relative;
               /*  font-size: calc(1.525rem + 3.3vw);  測試 */
-                font-size:smaller;
-                color:white;
+              color:white;
             }
             .masthead h3 {
               position: relative;
-                font-size:smaller;
-                color:white;
+              color:white;
             }
         }
 
 
     </style>
   </head>
-  <body>
-
+  <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="10">
+    
     <!-- navbar -->
     <div class="row">
         <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
@@ -169,11 +167,10 @@
     </div>
      
     <!-- history with background and collapse -->
-
     <div class="masthead" style="background-image: url('img/pexels-photo-2868665.jpeg');">
-      <div class="color-overlay d-flex flex-column align-items-start justify-content-center">
+      <div class="color-overlay d-flex flex-column  align-items-start justify-content-center">
           <div class="container-row ">
-            <h1 >
+            <h1 style="margin-top: 20px;">
                 都蘭歷史
             </h1>
           </div>
@@ -185,7 +182,7 @@
                 都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
               </h3>
             </div>
-            <div class="row">
+            <div class="row" >
               <h3>
                 &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
                 與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
@@ -309,9 +306,12 @@
       </div>
     </footer>
 
-<!--AOS script-->
-  <script>
-     AOS.init();
-  </script>
+
+    <script src="https:/code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--AOS script-->
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
