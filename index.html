@@ -9,91 +9,66 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="jquery-3.6.0.min.js"></script> -->
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!------->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link   rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
     <style>   
-        /* #myCarousel  .carousel-item {
-          height: 500px;
-          overflow:hidden;
-        } */
         #myCarousel .carousel-item img{
-          /* padding-top: 200px; */
           min-height: 600px;
           max-height: 768px;
           margin-top: -200px;
           object-fit: cover;
         }
 
-        /* content1 */
-        .content-main {
-            width: 100%;
-            max-width: auto;
-            padding-left: 20px;padding-right: 20px;
-            margin:0 0 auto auto;
-        }
-        .content-row {
-            display: flex;
-        }
-        .content-bg {
-            width: 470px;
-            max-width: 100%;
-            padding: 60px 40px 0;
-        }
-        .content-c-heading {
-            text-align: center;
-            color: #4f2e13;
-            font-size: 44px;
-            font-size: 4.4rem;
-            letter-spacing: 0.15em;
-        }
-        .content-text {
-            margin-top: 3em;
-            font-size: 16px;
-            font-size: 1.6rem;
-            line-height: 2.5;
-            letter-spacing: 0.15em;
-        }
-        .content-btn {
-            margin-top: 50px;
-            text-align: center;
-        }
-        .p-top-shop__img {
-            margin-right: -1000px;
-            margin-left: 100px;
-            margin-top: 250px;
-        }
-
-        
         /* history */
         .masthead {
             background-size: cover;
             min-height: 60vh;
             position: relative;
-            color: white;
+            background-repeat: no-repeat;
+            font-size: 1.2em;
+            color: rgb(255, 255, 255);
             text-shadow: 2px 2px 2px rgba(0,0,0,.5);
         }
-
-        h1 {
-            font-size: 4rem;
+        .masthead h1 {
+          font-size: 3em;
+            position: relative;
         }
-
+        .masthead h3 {
+          font-size: 1.2em;
+            position: relative;
+        }
         .color-overlay {
-            position: absolute;
+            position: relative;
             background-color: rgba(0,0,0,0.2);
             height: 100%;
             width: 100%;
         }
-
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             .masthead {
-                min-height: 30vh;
+              position: absolute;
+              min-height: 30vh;
+              font-size:smaller;
+              color:pink;
             }
-            h1 {
-                font-size: calc(1.525rem + 3.3vw);
+            .masthead h1 {
+              position: relative;
+              /*  font-size: calc(1.525rem + 3.3vw);  測試 */
+              color:white;
+            }
+            .masthead h3 {
+              position: relative;
+              color:white;
             }
         }
+
         /* 昭 */
 .main {
     width: 100%;
@@ -189,19 +164,15 @@
   opacity:1; 
 }
  /* 昭結束 */
+
+
+
+
     </style>
-
   </head>
-  <body>
-    <!-- AOS 滾動庫 -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-   AOS.init();
-  </script>
-
+  <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="10">
+    
     <!-- navbar -->
-
     <div class="row">
         <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
             <div class="container-fluid">
@@ -295,37 +266,48 @@
      
     <!-- history with background and collapse -->
     <div class="masthead" style="background-image: url('img/pexels-photo-2868665.jpeg');">
-      <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
-          <h1>
-              都蘭歷史
-          </h1>
+      <div class="color-overlay d-flex flex-column  align-items-start justify-content-center">
+          <div class="container-row ">
+            <h1 style="margin-top: 20px;">
+                都蘭歷史
+            </h1>
+          </div>
           <hr>
-          <h3>
-            都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
-          </h3>
-          <h3>
-            &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
-            與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
-            ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
-            故，演變為今日的都蘭。
-          </h3>
-          <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-              了解更多
-            </button>
+          <div data-aos="fade-right"data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+          <div class="container-row">
+            <div class="row">
+              <h3>
+                都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+              </h3>
+            </div>
+            <div class="row" >
+              <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+                與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+                ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+                故，演變為今日的都蘭。
+              </h3>
+          </div>
+        </div>
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                了解更多
+              </button>
           </p>
           <div style="min-height: 120px;">
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px; font-size: 1.3rem; background-color: aqua;">
+              <div class="card card-body" style="width: 300px; font-size: 1.3rem; background-color: rgb(32, 0, 107);">
                 都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
                 山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
                 ，希望藉由傳統文化與山海美景來吸引更多遊客。
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
     
+
     <!-- content1 -->
     <div data-aos="zoom-in"   data-aos-duration="3000">
       <div class="main"data-aos="fade-up" >
@@ -343,20 +325,94 @@
           <br/>
           
         </div>
-      </div>
-    </div>
+
     
 
     <!-- 回首頁按鈕 -->
     <div style="position: fixed; right: 0px; bottom: 5px;">
-		<a href="#">
-			<img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
-		</a>
-	</div>
+      <a href="#">
+        <img class="btn btn-light" src="https://upload.cc/i1/2022/05/18/F5olXI.png">
+      </a>
+    </div>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-     
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center">
+        <div class="row text-center align-items-center text-md-start">
+
+          <!-- how to get there -->
+          <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
+              <i class="fas fas fa-map-marker-alt mr-3">
+                <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528" target="_blank">
+                  點我導航
+                </a>
+              </i>
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +886 89531864
+            </p>
+            <p>
+              <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/" target="_blank">https://www.atolan-style.com/</a>
+            </p>
+          </div>
+
+          <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-lg-start">
+              Copyright 2022 All rights reserved by:
+              <a href="#" style="text-decoration: none;">
+                <strong class="text-warning">The FiveSeven</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/atolan.malakapahay" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/atolan_style/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https:/code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--AOS script-->
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
