@@ -24,6 +24,7 @@
     </script>
     <link rel="stylesheet" type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <style>
       #myCarousel {
@@ -137,7 +138,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-
+      
       .nav-mine li:nth-child(4):hover::before {
         content: "第4個";
         position: absolute;
@@ -228,13 +229,14 @@
       }
 
       .bg {
-        width: 800px;
+        
         max-width: 100%;
         padding: 60px 40px 0;
+        text-align: center;
       }
 
       .c-heading {
-        text-align: center;
+        
         color: #4f2e13;
         font-size: 44px;
         font-size: 4.4rem;
@@ -322,7 +324,7 @@
 
       #cf {
         position: relative;
-        height: 1000px;
+        height: 50vh;
         width: 720px;
         margin: 0 auto;
       }
@@ -342,15 +344,23 @@
       #cf img.top {
         opacity: 1;
       }
-      #f1{display: flex;
-        background-image: linear-gradient(rgb(193, 226, 172), rgba(247, 242, 196, 0.842));}
 
-      @media screen and (max-width: 768px)  {
-         #art2 {
-          padding-bottom: 50vh;
-           }
+      #f1 {
+        display: flex;
+        background-image: linear-gradient(rgb(193, 226, 172), rgba(247, 242, 196, 0.842));
       }
-              /* 昭的結束 */
+
+      @media screen and (max-width: 768px) {
+        #art2 {
+          padding-bottom: 50vh;
+        }
+      }
+  
+
+
+
+
+      /* 昭的結束 */
 
       /* scrollspy article */
       .article {
@@ -358,7 +368,6 @@
         background-size: cover;
         background-position: center center;
       }
-      
     </style>
   </head>
 
@@ -426,199 +435,185 @@
 
       <article id="article2" class="article article2">
         <div class="article-title">
-          <div class="container-fluid" style="Position:Relative;"id="art2">
-          <!-- history with background and collapse -->
-          <div class="masthead" style="background-image: url('img/都蘭國70.jpg'); ">
-            <div class="color-overlay d-flex flex-column  align-items-start justify-content-center">
-              <div class="container-row ">
-                <h1 style="margin-top: 20px;">
-                  <img src="img/history.png" style="width:10%;height:10%;filter:invert(100%)" />
-                  都蘭歷史
-                </h1>
-              </div>
-              <hr>
-              <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
-                <div class="container-row">
-                  <div class="row">
-                    <h3>
-                      都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
-                    </h3>
-                  </div>
-                  <div class="row">
-                    <h3>
-                      &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
-                      與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
-                      ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
-                      故，演變為今日的都蘭。
-                    </h3>
-                  </div>
+          <div class="" style="Position:Relative;" id="art2">
+            <!-- history with background and collapse -->
+            <div class="masthead" style="background-image: url('img/都蘭國70.jpg'); ">
+              <div class="color-overlay d-flex flex-column  align-items-start justify-content-center">
+                <div class="container-row ">
+                  <h1 style="margin-top: 20px;">
+                    <img src="img/history.png" style="width:10%;height:10%;filter:invert(100%)" />
+                    都蘭歷史
+                  </h1>
                 </div>
-                <p>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                    了解更多
-                  </button>
-                </p>
-                <div style="min-height: 120px;">
-                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                    <div class="card card-body"
-                      style="width: 300px; font-size: 1.3rem; background-color: rgb(32, 0, 107);">
-                      都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
-                      山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
-                      ，希望藉由傳統文化與山海美景來吸引更多遊客。<br/>
+                <hr>
+                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                  <div class="container-row">
+                    <div class="row">
+                      <h3>
+                        都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+                      </h3>
+                    </div>
+                    <div class="row">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+                        與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+                        ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+                        故，演變為今日的都蘭。
+                      </h3>
+                    </div>
+                  </div>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      了解更多
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card card-body"
+                        style="width: 300px; font-size: 1.3rem; background-color: rgb(32, 0, 107);">
+                        都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
+                        山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
+                        ，希望藉由傳統文化與山海美景來吸引更多遊客。<br />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </article>
-      
+
       <article id="article3" class="article article3">
         <div class="article-title">
-          <div class="container-fluid" style="Position:Relative">
-            <div data-aos="zoom-in" data-aos-duration="3000">
-              <div class="main" data-aos="fade-up">
-                <div class="row justify-content-between">
-                  <div id="f2">
-                  <div class="col-md-6 col-6">
-                    <div class="p-top-shop__img p-top-contents__img figure" data-aos="fade-down-right"
-                    data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf">
-                    <br><br><br><br><br><br><br><br><br><br>
-                    <img class="animate__animated animate__slideInRight image-main " src="img/img00002.jpg"  max-height="700">
-                    <img class="top animate__animated animate__slideInRight image-main"
-                      src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791"  max-height="700" />
-                  </div>
-                  </div>
-                  <div class="col-md-6 col-6">
-                    <div class="bg">
-                      <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in"
-                        data-aos-dalay="3000" data-aos-anchor-placement="center-center">都蘭之美<span
-                          class="c-heading__inner"><span><br />自然生態</span></span></h2>
-                      <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"
-                        data-aos-anchor-placement="center-bottom">
-                        「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br>
-                      </h3>
-                      <p class="btn2" style=""><a href="http://www.zztaitung.com/107/dolanandmoon"
-                          target="_blank" class="c-btn">前進都蘭</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-                
-              </div>
-            </div>
+          <div class=""style="background-image: linear-gradient(rgb(169, 231, 252), rgba(223, 221, 202, 0.575));Position:Relative;display: flex;align-items:center;width: 100%;flex-wrap: wrap;"
+          data-aos="zoom-in" data-aos-duration="3000">
 
+
+
+
+          
+          <div class="p-top-shop__img p-top-contents__img figure item" data-aos="fade-down-right"
+            data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf" style="margin-top:10vh;">
+            <img class="animate__animated animate__slideInRight image-main " src="img/img00002.jpg" max-height="700">
+            <img class="top animate__animated animate__slideInRight image-main"
+              src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791" max-height="700" />
           </div>
+
+
+          <div class="bg item">
+            <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in" data-aos-dalay="3000"data-aos-anchor-placement="center-center">都蘭之美
+              <span class="c-heading__inner"><span><br />自然生態</span></span></h2>
+            <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"
+              data-aos-anchor-placement="center-bottom">
+              「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br>
+            </h3>
+            <p class="btn2" style=""><a href="http://www.zztaitung.com/107/dolanandmoon" target="_blank"
+                class="c-btn">前進都蘭</a></p>
+          </div>
+
+
+
+
+
+        </div>
+          
         </div>
       </article>
 
       <article id="article4" class="article article4">
         <div class="article-title">
-          <div class="container-fluid" data-aos="zoom-in" data-aos-duration="3000">
-            <div class="main" data-aos="fade-up">
-              <div class="row justify-content-start" id="f1">
-                <div class="col-md-4 col-6 " >
-                  <h2 class="c-heading animate__animated animate__bounce"style="margin-top: 10%;">都蘭之美<span
-                    class="c-heading__inner"><span><br />人文地景</span></span></h2>
-                <p class="text animate__fadeInLeft animate__animated">
-                  都蘭社區的地理景觀亦是聞名暇耳，如：水往上流、都蘭鼻等....<br>社區文化潛藏著豐富的人文景像。如：都蘭糖廠舊址、都蘭文化遺址、都蘭林場、阿美文化工作團、廖勝義木雕工作室……等，均是相當值得探訪的人文資產。<br><br>
-                </p>
-                <p class="btn2"><a href="https://www.facebook.com/profile.php?id=100004672904154" target="_blank"
-                    class="c-btn">前進都蘭</a></p>
-              </div>
-                  <br />
-                  <div class="col-md-8 col-6 ">
+          <div class=""style="justify-content: center;
+          align-items: center; background-image: linear-gradient(rgb(193, 226, 172), rgba(247, 242, 196, 0.842));Position:Relative;display: flex;align-items:center;flex-wrap: wrap;"
+          data-aos="zoom-in" data-aos-duration="3000">
+          
+             
+                <div class="bg item ">
+                  <h2 class="c-heading animate__animated animate__bounce" style="margin-top: 10%;">都蘭之美<span
+                      class="c-heading__inner"><span><br />人文地景</span></span></h2>
+                  <p class="text animate__fadeInLeft animate__animated">
+                    都蘭社區的地理景觀亦是聞名暇耳，如：水往上流、都蘭鼻等....<br>社區文化潛藏著豐富的人文景像。如：都蘭糖廠舊址、都蘭文化遺址、都蘭林場、阿美文化工作團、廖勝義木雕工作室……等，均是相當值得探訪的人文資產。<br><br>
+                  </p>
+                  <p class="btn2"><a href="https://www.facebook.com/profile.php?id=100004672904154" target="_blank"class="c-btn">前進都蘭</a></p>
+                </div>
+
+                <br />
+
+                <div class="item" style="text-align:center;max-height: 500px ;">
                   <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel"
-                    style="margin-top: 3%;margin-left: 5%;" data-aos="fade-up-right" data-aos-duration="3000">
+                    style="margin-top: 3%;" data-aos="fade-up-right" data-aos-duration="3000">
                     <div class="carousel-inner ">
                       <div class="carousel-item active">
                         <img src="https://pic.pimg.tw/yangbingyu/1416936329-540286655.jpg" class="d-block w-100 ">
                       </div>
-                      <div class="carousel-item">
+                      <div class="carousel-item"style="">
                         <img
                           src="https://3.bp.blogspot.com/-439UNAMnZa4/V4L1xyz-kXI/AAAAAAAAN6Y/8orR2EjynIga1AsRVKw_rn41XcBdijq5QCKgB/s1600/3V8A2889.JPG"
-                          class="d-block w-100">
+                          class=" d-block "style="max-width:100%;max-height:500px;">
                       </div>
-                      <div class="carousel-item">
-                        <img src="img/img00001.jpg" class="d-block w-100">
+                      <div class="carousel-item"style="">
+                        <img src="img/img00001.jpg" class="d-block " style="max-width:100%;max-height:500px;">
                       </div>
                     </div>
-                    <br /><br />
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                      data-bs-slide="prev">
-                      <span class="" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                      data-bs-slide="next">
-                      <span class="" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                    data-bs-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>             
                   </div>
                 </div>
-              </div>
-              </div>
+              
+           
 
-                
+
           </div>
-          </div>
+        </div>
       </article>
 
       <!-- 還沒做的部分 -->
       <article id="article5" class="article article5">
         <div class="article-title">
-          <div class="container-fluid">
-            <div class="container-fluid" data-aos="zoom-in" data-aos-duration="3000">
-              <div class="main" data-aos="fade-up">
-                <div class="row">
-                  <div class="row3">
-                    <div class="bg col-md-6 col-lg-4">
-                      <h2 class="c-heading animate__animated animate__bounce">都蘭之美<span
-                          class="c-heading__inner"><span><br />人文地景</span></span></h2>
-                      <p class="text animate__fadeInLeft animate__animated ">
-                        都蘭社區的地理景觀亦是聞名暇耳，如：水往上流、都蘭鼻等....<br>社區文化潛藏著豐富的人文景像。如：都蘭糖廠舊址、都蘭文化遺址、都蘭林場、阿美文化工作團、廖勝義木雕工作室……等，均是相當值得探訪的人文資產。<br><br>
-                      </p>
-                      <p class="btn2"><a href="https://www.facebook.com/profile.php?id=100004672904154" target="_blank"
-                          class="c-btn">前進都蘭</a></p>
-                    </div>
-                    <br />
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                      style="margin-top: 3%;margin-right: 5%;width: 100%;" data-aos="fade-up-right"
-                      data-aos-duration="3000">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="https://pic.pimg.tw/yangbingyu/1416936329-540286655.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                          <img
-                            src="https://3.bp.blogspot.com/-439UNAMnZa4/V4L1xyz-kXI/AAAAAAAAN6Y/8orR2EjynIga1AsRVKw_rn41XcBdijq5QCKgB/s1600/3V8A2889.JPG"
-                            class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="img/img00001.jpg" class="d-block w-100">
-                        </div>
-                      </div>
-                      <br /><br />
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+          <div class=""style="background-image: linear-gradient(rgb(169, 231, 252), rgba(223, 221, 202, 0.575));Position:Relative;display: flex;align-items:center;border: 10px solid mistyrose;width: 100%;flex-wrap: wrap;"
+            data-aos="zoom-in" data-aos-duration="3000">
+
+
+
+
+            
+            <div class="p-top-shop__img p-top-contents__img figure item" data-aos="fade-down-right"
+              data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf">
+              <img class="animate__animated animate__slideInRight image-main " src="img/img00002.jpg" max-height="700">
+              <img class="top animate__animated animate__slideInRight image-main"
+                src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791" max-height="700" />
             </div>
+
+
+            <div class="bg item">
+              <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in" data-aos-dalay="3000"data-aos-anchor-placement="center-center">都蘭之美
+                <span class="c-heading__inner"><span><br />自然生態</span></span></h2>
+              <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"
+                data-aos-anchor-placement="center-bottom">
+                「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br>
+              </h3>
+              <p class="btn2" style=""><a href="http://www.zztaitung.com/107/dolanandmoon" target="_blank"
+                  class="c-btn">前進都蘭</a></p>
+            </div>
+
+
+
+
+
           </div>
+        </div>
+
         </div>
       </article>
 
@@ -760,7 +755,7 @@
         </div>
       </nav>
     </div>
-
+    
     <!-- 回首頁按鈕 -->
     <div style="position: fixed; right: 0px; bottom: 5px;">
       <a href="#">
@@ -773,7 +768,7 @@
     <script>
       AOS.init();
     </script>
-
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 
   </html>
