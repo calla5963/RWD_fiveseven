@@ -44,7 +44,6 @@
         background: center no-repeat fixed;
         background-size: cover;
         color: rgb(0, 0, 0);
-
       }
 
       .masthead h1 {
@@ -63,11 +62,26 @@
         height: 100%;
         width: 100%;
       }
-
-      @media (max-width: 767px) {
+      @media  (max-width:1279px) and (min-width:768px){
         .masthead {
           position: absolute;
           min-height: 30vh;
+          font-size: smaller;
+          color: pink;    
+        }
+        .masthead h1 {
+          position: relative;
+          color: white;
+        }
+        .masthead h3 {
+          position: relative;
+          color: white;
+        }
+      }
+      @media (max-width: 767px) {
+        .masthead {
+          position: absolute;
+          min-height: 20vh;
           font-size: smaller;
           color: pink;
         }
@@ -123,6 +137,7 @@
         padding: 4px;
         padding-right: 10px;
         border-radius: 5px;
+        padding-bottom: calc(33%/2);
       }
 
       .nav-mine li:nth-child(3):hover::before {
