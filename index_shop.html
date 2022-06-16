@@ -1,0 +1,273 @@
+
+  <!doctype html>
+  <html lang="zh-tw">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>都蘭就是個小村啦</title>
+
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script> -->
+      
+    <!-- kit's icon -->
+    <script src="https://kit.fontawesome.com/c08c74e4f8.js" crossorigin="anonymous"></script>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- fiveseven's css -->
+    <link href="css/style.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 start-0 w-100" id="myTab" role="tablist">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="#">
+          都蘭村
+        </a>
+        <button class="navbar-toggler mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon mt-0">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse p-2 flex-column s" id="navbarContent">
+          <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-dark" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <a class="navbar-brand d-none d-lg-block mt-2" href="#">
+              都蘭村
+            </a>
+            <ul class="navbar-nav nav-pills mt-2">
+
+              <li class="nav-item d-flex align-items-center" role="presentation">
+                <l class="fas fa-user"></l>
+                <a href="./index.html" class="btn btn-outline-primary ">
+                  都蘭人文與自然風然
+                </a>
+              </li>
+              <li class="nav-item d-flex align-items-center" role="presentation">
+                <l class="fas fa-user"></l>
+                <a href="./index_shop.html" class="btn btn-outline-primary ">
+                  都蘭店家
+                </a>
+              </li>
+
+              <li class="nav-item d-flex align-items-center">
+                <a class="nav-link mx-2" href="#">
+                  <i class="fas fa-shopping-bag"></i>
+                  Bag
+                </a>
+                <span class="badge rounded-pill bg-secondary">
+                  0
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <!-- navs and tabs -->
+    <div class="container-fluid">
+
+      <!-- 給左側導覽列 -->
+      <nav id="nav_second" class="position-fixed top-0 start-0 h-100 d-flex align-items-center ms-4">
+        <ul class="nav nav-mine002 flex-column">
+          <li class="nav-item mb-2"><a href="#article8" class="nav-link active"></a></li>
+          <li class="nav-item mb-2"><a href="#article9" class="nav-link"></a></li>
+          <li class="nav-item mb-2"><a href="#article10" class="nav-link"></a></li>
+          <li class="nav-item mb-2"><a href="#article11" class="nav-link"></a></li>
+        </ul>
+      </nav>
+
+      <!-- 給section -->
+      <section  data-bs-spy="scroll" data-bs-target="#nav_second" data-bs-offset="10">
+        <!-- article1 -->
+        <article id="article8" class="article article8">
+          <div class="article-title">
+            <!-- carousel -->
+            <div id="myCarousel002" class="carousel slide" data-bs-ride="carousel">
+              <!-- 輪播提示 -->
+              <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel002" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel002" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel002" data-bs-slide-to="2"></li>
+              </ol>
+              <!-- 輪播內容 -->
+              <div class="carousel-inner">
+                <dvi class="carousel-item active">
+                  <img src="img/carousel001.jpg" class="d-block w-100" alt="">
+                  <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                    <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">都蘭國</h5>
+                  </div>
+                </dvi>
+                <dvi class="carousel-item">
+                  <img src="img/carousel004.jpg" class="d-block w-100" alt="">
+                  <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                    <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">新東糖廠文化園區</h5>
+                  </div>
+                </dvi>
+  
+                <dvi class="carousel-item">
+                  <img src="img/carousel006.jpg" class="d-block w-100" alt="">
+                  <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                    <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">恩娜比亞咖啡</h5>
+                  </div>
+                </dvi>
+              </div>
+              <!-- 輪播控制 -->
+              <a class="carousel-control-prev" href="#myCarousel002" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel002" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+        </article>
+  
+        <!-- article22 -->
+        <article id="article9" class="article article9">
+          <div class="article-title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam perferendis modi a? Enim vero explicabo, sed quos sint eaque aspernatur earum, suscipit ducimus eos voluptatibus atque tempore vel quibusdam! Fuga magni ducimus sed mollitia qui nisi architecto autem nemo consectetur explicabo doloremque ratione saepe facilis, obcaecati sequi? Voluptatem, ipsa eius. Quibusdam minima nam corrupti, dicta veniam maxime sunt officiis fuga nostrum error atque magnam aliquam libero deserunt sequi ipsum tenetur temporibus incidunt! Aliquid autem sed dolor earum, maiores, nihil exercitationem quisquam ducimus nesciunt amet ipsum facilis odit! Numquam distinctio repellendus iste delectus veritatis voluptate debitis adipisci, velit nostrum explicabo soluta minima commodi cum et voluptas ex ipsum quas dolor sapiente? Perspiciatis quasi repudiandae aliquam dolorem exercitationem, perferendis, sed aperiam consectetur voluptatibus, amet voluptate labore. Accusantium ex, illo culpa, iure, officiis fuga corporis minus ducimus error consectetur itaque sunt quidem enim hic repellendus magnam minima quibusdam rem numquam voluptatem mollitia ea amet quam. Impedit quaerat velit quibusdam debitis eveniet odio fuga aspernatur, incidunt corporis laboriosam expedita, alias in magni unde, excepturi iure? Aspernatur ipsam tempore architecto quisquam sunt quidem officiis perferendis vel est dicta, accusamus porro repellendus quibusdam esse nesciunt soluta dolorum molestias beatae! Soluta non voluptatem quaerat deserunt eveniet perspiciatis sint vitae, at exercitationem quos facere recusandae eum quasi modi veniam pariatur earum corporis vel ratione animi. Aut facere, saepe et debitis explicabo, veritatis deleniti officia in consequatur, repellendus adipisci magni ea aliquid minima reprehenderit neque quos dignissimos dolorem. Asperiores iste ullam facilis ratione ipsum in temporibus enim odio exercitationem, nulla minus obcaecati nesciunt nam repellat expedita neque ipsam pariatur vitae cumque vel odit voluptate. Id a, ea doloribus, adipisci voluptatibus consectetur facilis harum laudantium laborum doloremque, molestias exercitationem nostrum tempore libero officiis magnam! Recusandae nam sapiente sequi eveniet perspiciatis veritatis quis fuga sit libero eligendi itaque molestiae aliquid voluptate eum nostrum quo, ducimus excepturi? Doloribus quam porro illo dolores autem rerum vitae voluptate nemo, consequuntur nam iste aut velit necessitatibus ut quis quos exercitationem expedita natus atque. Nihil quo iste commodi. Cupiditate, deserunt autem exercitationem reiciendis non nulla quisquam recusandae rem eligendi! Qui deserunt commodi quidem, sed ex ea eaque odit consectetur, ratione, enim alias eos a exercitationem obcaecati delectus cupiditate. Quia placeat, consequatur minus quas dolores excepturi similique? Fugit earum quia, nulla iste voluptate voluptas! Nesciunt dolores iusto, commodi dolorum a ut quisquam aliquid saepe nihil perferendis culpa, dolorem eligendi natus pariatur adipisci. Quos esse dignissimos ipsum aperiam saepe commodi nesciunt deserunt asperiores cum excepturi sint aliquid, earum vel impedit dolorem rerum quisquam quod. Minus, esse officia ea libero perspiciatis sint quod voluptatum cum tempore sunt vel at soluta impedit maiores ex dolore. Nesciunt eos laboriosam quam unde nobis sit reiciendis sint tenetur magnam voluptate maiores, optio soluta. At rem similique eius. Sit optio suscipit a molestias ratione deleniti id nisi? Laboriosam labore praesentium dolores odio itaque, quasi tempora blanditiis, explicabo, soluta eius sed cum adipisci tempore esse tenetur veniam illo impedit ipsam repellat sapiente dolorum optio voluptatem molestias? Laborum maxime, rem soluta eius provident nihil fugit?
+          </div>
+        </article>
+
+        <!-- article22 -->
+        <article id="article10" class="article article10">
+          <div class="article-title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam perferendis modi a? Enim vero explicabo, sed quos sint eaque aspernatur earum, suscipit ducimus eos voluptatibus atque tempore vel quibusdam! Fuga magni ducimus sed mollitia qui nisi architecto autem nemo consectetur explicabo doloremque ratione saepe facilis, obcaecati sequi? Voluptatem, ipsa eius. Quibusdam minima nam corrupti, dicta veniam maxime sunt officiis fuga nostrum error atque magnam aliquam libero deserunt sequi ipsum tenetur temporibus incidunt! Aliquid autem sed dolor earum, maiores, nihil exercitationem quisquam ducimus nesciunt amet ipsum facilis odit! Numquam distinctio repellendus iste delectus veritatis voluptate debitis adipisci, velit nostrum explicabo soluta minima commodi cum et voluptas ex ipsum quas dolor sapiente? Perspiciatis quasi repudiandae aliquam dolorem exercitationem, perferendis, sed aperiam consectetur voluptatibus, amet voluptate labore. Accusantium ex, illo culpa, iure, officiis fuga corporis minus ducimus error consectetur itaque sunt quidem enim hic repellendus magnam minima quibusdam rem numquam voluptatem mollitia ea amet quam. Impedit quaerat velit quibusdam debitis eveniet odio fuga aspernatur, incidunt corporis laboriosam expedita, alias in magni unde, excepturi iure? Aspernatur ipsam tempore architecto quisquam sunt quidem officiis perferendis vel est dicta, accusamus porro repellendus quibusdam esse nesciunt soluta dolorum molestias beatae! Soluta non voluptatem quaerat deserunt eveniet perspiciatis sint vitae, at exercitationem quos facere recusandae eum quasi modi veniam pariatur earum corporis vel ratione animi. Aut facere, saepe et debitis explicabo, veritatis deleniti officia in consequatur, repellendus adipisci magni ea aliquid minima reprehenderit neque quos dignissimos dolorem. Asperiores iste ullam facilis ratione ipsum in temporibus enim odio exercitationem, nulla minus obcaecati nesciunt nam repellat expedita neque ipsam pariatur vitae cumque vel odit voluptate. Id a, ea doloribus, adipisci voluptatibus consectetur facilis harum laudantium laborum doloremque, molestias exercitationem nostrum tempore libero officiis magnam! Recusandae nam sapiente sequi eveniet perspiciatis veritatis quis fuga sit libero eligendi itaque molestiae aliquid voluptate eum nostrum quo, ducimus excepturi? Doloribus quam porro illo dolores autem rerum vitae voluptate nemo, consequuntur nam iste aut velit necessitatibus ut quis quos exercitationem expedita natus atque. Nihil quo iste commodi. Cupiditate, deserunt autem exercitationem reiciendis non nulla quisquam recusandae rem eligendi! Qui deserunt commodi quidem, sed ex ea eaque odit consectetur, ratione, enim alias eos a exercitationem obcaecati delectus cupiditate. Quia placeat, consequatur minus quas dolores excepturi similique? Fugit earum quia, nulla iste voluptate voluptas! Nesciunt dolores iusto, commodi dolorum a ut quisquam aliquid saepe nihil perferendis culpa, dolorem eligendi natus pariatur adipisci. Quos esse dignissimos ipsum aperiam saepe commodi nesciunt deserunt asperiores cum excepturi sint aliquid, earum vel impedit dolorem rerum quisquam quod. Minus, esse officia ea libero perspiciatis sint quod voluptatum cum tempore sunt vel at soluta impedit maiores ex dolore. Nesciunt eos laboriosam quam unde nobis sit reiciendis sint tenetur magnam voluptate maiores, optio soluta. At rem similique eius. Sit optio suscipit a molestias ratione deleniti id nisi? Laboriosam labore praesentium dolores odio itaque, quasi tempora blanditiis, explicabo, soluta eius sed cum adipisci tempore esse tenetur veniam illo impedit ipsam repellat sapiente dolorum optio voluptatem molestias? Laborum maxime, rem soluta eius provident nihil fugit?
+          </div>
+        </article>
+        
+  
+        <article id="article11" class="article article11">
+          <div class="article-title">
+            <!-- footer -->
+            <footer class="bg-dark text-white pt-5 pb-4">
+              <div class="container text-center">
+                <div class="row text-center align-items-center text-md-start">
+                  <!-- how to get there -->
+                  <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+                    <p>
+                      <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
+                      <i class="fas fas fa-map-marker-alt">
+                        <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528"
+                          target="_blank">
+                          點我導航
+                        </a>
+                      </i>
+                    </p>
+                    <p>
+                      <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
+                    </p>
+                    <p>
+                      <i class="fas fa-phone mr-3"></i> +886 89531864
+                    </p>
+                    <p>
+                      <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/"
+                        target="_blank">https://www.atolan-style.com/</a>
+                    </p>
+                  </div>
+                  <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3 ratio ratio-16x9">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                  <div class="col-md-7 col-lg-8">
+                    <p class="text-lg-start">
+                      Copyright 2022 All rights reserved by:
+                      <a href="#" style="text-decoration: none;">
+                        <strong class="text-warning text-wrap badge fs-6">The FiveSeven</strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                          <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                      <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                          <a href="https://www.facebook.com/atolan.malakapahay" target="_blank"
+                            class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.instagram.com/atolan_style/" target="_blank"
+                            class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank"
+                            class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </article>
+      </section>
+        
+    </div>
+    
+
+    
+    <!-- 回首頁按鈕 -->
+    <div style="position: fixed; right: 0px; bottom: 5px; z-index: 3;">
+      <a href="#">
+        <img class="btn btn-light" data-toggle="tooltip" src="https://upload.cc/i1/2022/05/18/F5olXI.png"  title="我是可以回到頁首的可愛麵包">
+      </a>
+    </div>
+
+    <script src="https:/code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--AOS script-->
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- tooltip -->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+
+    
+  </body>
+</html>
