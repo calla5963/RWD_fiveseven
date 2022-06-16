@@ -67,9 +67,24 @@
         height: 100%;
         width: 100%;
       }
+      @media (max-width:1279px) and (min-width:768px) {
+        .masthead {
+          min-height: 30vh;
+          font-size: smaller;
+          color: pink;
+        }
+        .masthead h1 {
+          position: relative;
+          /*  font-size: calc(1.525rem + 3.3vw);  測試 */
+          color: white;
+        }
+        .masthead h3 {
+          position: relative;
+          color: white;
+        }
+      }
       @media (max-width: 767px) {
         .masthead {
-          position: absolute;
           min-height: 30vh;
           font-size: smaller;
           color: pink;
