@@ -86,19 +86,19 @@
       }
       /* 俊彥的 history */
 
-      /* 以下nav */
+      /* 以下左側nav */
       nav {
         z-index: 5;
       }
-      .nav-mine li {
+      .nav-mine001 li {
         position: relative;
       }
-      .nav-mine li.active a::after {
+      .nav-mine001 li.active a::after {
         height: 80px;
         opacity: 1;
         margin: 8px auto;
       }
-      .nav-mine li:nth-child(1):hover::before {
+      .nav-mine001 li:nth-child(1):hover::before {
         content: "都蘭之美";
         position: absolute;
         width: max-content;
@@ -110,7 +110,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine li:nth-child(2):hover::before {
+      .nav-mine001 li:nth-child(2):hover::before {
         content: "都蘭歷史";
         position: absolute;
         width: max-content;
@@ -122,7 +122,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine li:nth-child(3):hover::before {
+      .nav-mine001 li:nth-child(3):hover::before {
         content: "都蘭自然";
         position: absolute;
         width: max-content;
@@ -134,7 +134,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine li:nth-child(4):hover::before {
+      .nav-mine001 li:nth-child(4):hover::before {
         content: "都蘭人文";
         position: absolute;
         width: max-content;
@@ -146,7 +146,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine li:nth-child(5):hover::before {
+      .nav-mine001 li:nth-child(5):hover::before {
         content: "都蘭小房子";
         position: absolute;
         width: max-content;
@@ -158,7 +158,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine li:nth-child(6):hover::before {
+      .nav-mine001 li:nth-child(6):hover::before {
         content: "都蘭天主堂";
         position: absolute;
         width: max-content;
@@ -170,7 +170,7 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine li:nth-child(7):hover::before {
+      .nav-mine001 li:nth-child(7):hover::before {
         content: "頁尾";
         position: absolute;
         width: max-content;
@@ -182,7 +182,8 @@
         padding-right: 10px;
         border-radius: 5px;
       }
-      .nav-mine .nav-link {
+      
+      .nav-mine001 .nav-link {
         padding: 0;
         width: 35px;
         height: 35px;
@@ -190,7 +191,7 @@
         background-color: rgba(0, 0, 0, 0.3);
         clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
       }
-      .nav-mine .active {
+      .nav-mine001 .active {
         padding: 0;
         width: 35px;
         height: 35px;
@@ -199,6 +200,84 @@
         filter: grayscale(1);
         transition: all .5s;
       }
+
+      /* page第二頁 */
+      .nav-mine002 li {
+        position: relative;
+      }
+      .nav-mine002 li.active a::after {
+        height: 80px;
+        opacity: 1;
+        margin: 8px auto;
+      }
+
+      .nav-mine002 li:nth-child(1):hover::before {
+        content: "都蘭之美";
+        position: absolute;
+        width: max-content;
+        left: 30px;
+        top: -2px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 4px;
+        padding-right: 10px;
+        border-radius: 5px;
+      }
+      .nav-mine002 li:nth-child(2):hover::before {
+        content: "都蘭店家1";
+        position: absolute;
+        width: max-content;
+        left: 30px;
+        top: -2px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 4px;
+        padding-right: 10px;
+        border-radius: 5px;
+      }
+
+      .nav-mine002 li:nth-child(3):hover::before {
+        content: "都蘭店家2";
+        position: absolute;
+        width: max-content;
+        left: 30px;
+        top: -2px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 4px;
+        padding-right: 10px;
+        border-radius: 5px;
+      }
+      .nav-mine002 li:nth-child(4):hover::before {
+        content: "頁尾";
+        position: absolute;
+        width: max-content;
+        left: 30px;
+        top: -2px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 4px;
+        padding-right: 10px;
+        border-radius: 5px;
+      }
+      .nav-mine002 .nav-link {
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.3);
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      }
+      .nav-mine002 .active {
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        content: "";
+        background: url('https://upload.cc/i1/2022/06/14/7XqIU8.gif') no-repeat center center;
+        filter: grayscale(1);
+        transition: all .5s;
+      }
+      
       /* 以上nav */
 
 
@@ -385,341 +464,542 @@
       }
     </style>
   </head>
-
   <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="10">
 
-    <nav id="nav" class="position-fixed top-0 start-0 h-100 d-flex align-items-center ms-4">
-      <ul class="nav nav-mine flex-column">
-        <li class="nav-item mb-2"><a href="#article1" class="nav-link active"></a></li>
-        <li class="nav-item mb-2"><a href="#article2" class="nav-link"></a></li>
-        <li class="nav-item mb-2"><a href="#article3" class="nav-link"></a></li>
-        <li class="nav-item mb-2"><a href="#article4" class="nav-link"></a></li>
-        <li class="nav-item mb-2"><a href="#article5" class="nav-link"></a></li>
-        <li class="nav-item mb-2"><a href="#article6" class="nav-link"></a></li>
-        <li class="nav-item mb-2"><a href="#article7" class="nav-link"></a></li>
+    <!-- navs and tabs -->
+    <div class="container-fluid">
+      <ul class="nav nav-pills navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="myTab" role="tablist">
+        <a class="navbar-brand" href="#">
+          <img src="https://upload.cc/i1/2022/05/18/F5olXI.png" alt="" width="30" height="24"
+            class="d-inline-block align-text-top">
+            都蘭村
+        </a>
+        <!-- 修改分頁 -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">都蘭人文與自然風然</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">都蘭店家</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+        <!-- <li class="nav-item"  role="presentation">
+          <button class="nav-link" style="visibility: hidden;" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+        </li> -->
       </ul>
-    </nav>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          
+          <!-- 給左側導覽列 -->
+          <nav id="nav" class="position-fixed top-0 start-0 h-100 d-flex align-items-center ms-4">
+            <ul class="nav nav-mine001 flex-column">
+              <li class="nav-item mb-2"><a href="#article1" class="nav-link active"></a></li>
+              <li class="nav-item mb-2"><a href="#article2" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article3" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article4" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article5" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article6" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article7" class="nav-link"></a></li>
+            </ul>
+          </nav>
 
-    <section>
-      <article id="article1" class="article article1">
-        <div class="article-title">
-          <!-- carousel -->
-          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- 輪播提示 -->
-            <ol class="carousel-indicators">
-              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-            </ol>
-            <!-- 輪播內容 -->
-            <div class="carousel-inner">
-              <dvi class="carousel-item active">
-                <img src="img/carousel001.jpg" class="d-block w-100" alt="">
-                <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
-                  <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">都蘭國</h5>
+          <!-- 給section -->
+          <section>
+            <article id="article1" class="article article1">
+              <div class="article-title">
+                <!-- carousel -->
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <!-- 輪播提示 -->
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                  </ol>
+                  <!-- 輪播內容 -->
+                  <div class="carousel-inner">
+                    <dvi class="carousel-item active">
+                      <img src="img/carousel001.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                        <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">都蘭國</h5>
+                      </div>
+                    </dvi>
+                    <dvi class="carousel-item">
+                      <img src="img/carousel004.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                        <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">新東糖廠文化園區</h5>
+                      </div>
+                    </dvi>
+      
+                    <dvi class="carousel-item">
+                      <img src="img/carousel006.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                        <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">恩娜比亞咖啡</h5>
+                      </div>
+                    </dvi>
+                  </div>
+                  <!-- 輪播控制 -->
+                  <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
                 </div>
-              </dvi>
-              <dvi class="carousel-item">
-                <img src="img/carousel004.jpg" class="d-block w-100" alt="">
-                <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
-                  <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">新東糖廠文化園區</h5>
-                </div>
-              </dvi>
-
-              <dvi class="carousel-item">
-                <img src="img/carousel006.jpg" class="d-block w-100" alt="">
-                <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
-                  <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">恩娜比亞咖啡</h5>
-                </div>
-              </dvi>
-            </div>
-            <!-- 輪播控制 -->
-            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article id="article2" class="article article2">
-        <div class="article-title">
-          <div class="" style="Position:Relative;" id="art2 ">
-            <!-- history with background and collapse -->
-            <div class="masthead" style="background-image: url('img/都蘭國70.jpg'); ">
-              <div class="color-overlay d-flex flex-column  align-items-center justify-content-center">
-                <div class="container-row ">
-                  <h1 style="margin-top: 20px;">
-                    <img src="img/history.png" style="width:10%;height:10%;filter:invert(100%)" />
-                    都蘭歷史
-                  </h1>
-                </div>
-                <hr>
-                <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
-                  <div class="container-row">
-                    <div class="row">
-                      <h3>
-                        都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
-                      </h3>
-                    </div>
-                    <div class="row">
-                      <h3>
-                        &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
-                        與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
-                        ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
-                        故，演變為今日的都蘭。
-                      </h3>
+              </div>
+            </article>
+      
+            <article id="article2" class="article article2">
+              <div class="article-title">
+                <div class="" style="Position:Relative;" id="art2 ">
+                  <!-- history with background and collapse -->
+                  <div class="masthead" style="background-image: url('img/都蘭國70.jpg'); ">
+                    <div class="color-overlay d-flex flex-column  align-items-center justify-content-center">
+                      <div class="container-row ">
+                        <h1 style="margin-top: 20px;">
+                          <img src="img/history.png" style="width:10%;height:10%;filter:invert(100%)" />
+                          都蘭歷史
+                        </h1>
+                      </div>
+                      <hr>
+                      <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                        <div class="container-row">
+                          <div class="row">
+                            <h3>
+                              都蘭村是一個典型的卑南阿美群的阿美族大部落，有著知名的都蘭遺址，主要族群為原住民、閩南人、客家人。
+                            </h3>
+                          </div>
+                          <div class="row">
+                            <h3>
+                              &nbsp;&nbsp;&nbsp;&nbsp;都蘭社區隸屬於東河鄉，位於東海岸南段濱太平洋，北接泰源鄉，南臨鹿野鄉
+                              與都蘭山，西以為關山鎮鄰。都蘭原名都巒。因該地多石，阿美族人闢地耕作
+                              ，將挖掘的石頭砌在旱地旁，拾石砌牆處，阿美族語稱為Etolan，因發音的緣
+                              故，演變為今日的都蘭。
+                            </h3>
+                          </div>
+                        </div>
+                        <p>
+                          <button class="btn btn-primary mx-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                            了解更多
+                          </button>
+                        </p>
+                      </div>
+                        <div style="min-height: 120px;">
+                          <div class="collapse collapse-horizontal align-items-center" id="collapseWidthExample">
+                            <div class="card card-body"
+                              style="width: 500px; font-size: 1.2rem; background-color: rgb(121, 104, 161);">
+                              都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
+                              山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
+                              ，希望藉由傳統文化與山海美景來吸引更多遊客。<br />
+                            </div>
+                          </div>
+                        </div>
                     </div>
                   </div>
-                  <p>
-                    <button class="btn btn-primary mx-auto" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                      了解更多
-                    </button>
-                  </p>
                 </div>
-                  <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal align-items-center" id="collapseWidthExample">
-                      <div class="card card-body"
-                        style="width: 500px; font-size: 1.2rem; background-color: rgb(121, 104, 161);">
-                        都蘭山目前居住為阿美族人的都蘭部落，同時許多台東的阿美族部落也視都蘭
-                        山為聖山，在當地縣政府與社區居民的推動下，都蘭山也發展著文化觀光產業
-                        ，希望藉由傳統文化與山海美景來吸引更多遊客。<br />
+              </div>
+            </article>
+      
+            <article id="article3" class="article article3">
+              <div class="article-title">
+                <div class=""style="background-image: linear-gradient(rgb(169, 231, 252), rgba(223, 221, 202, 0.575));Position:Relative;display: flex;align-items:center;width: 100%;flex-wrap: wrap;"
+                data-aos="zoom-in" data-aos-duration="3000">
+                  <div class="p-top-shop__img p-top-contents__img figure item" data-aos="fade-down-right"
+                    data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf" style="margin-top:10vh;">
+                    <img class="animate__animated animate__slideInRight image-main " src="img/img00002.jpg" max-height="700">
+                    <img class="top animate__animated animate__slideInRight image-main"
+                      src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791" max-height="700" />
+                  </div>
+                  <div class="bg item">
+                    <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in" data-aos-dalay="3000"data-aos-anchor-placement="center-center">都蘭之美
+                      <span class="c-heading__inner"><span><br />自然生態</span></span></h2>
+                    <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"
+                      data-aos-anchor-placement="center-bottom">
+                      「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br>
+                    </h3>
+                    <p class="btn2"><a href="http://www.zztaitung.com/107/dolanandmoon" target="_blank"
+                        class="c-btn">前進都蘭</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+      
+            <article id="article4" class="article article4">
+              <div class="article-title">
+                <div class=""style="justify-content: center;
+                align-items: center; background-image: linear-gradient(rgb(193, 226, 172), rgba(247, 242, 196, 0.842));Position:Relative;display: flex;align-items:center;flex-wrap: wrap;"
+                data-aos="zoom-in" data-aos-duration="3000">
+                  <div class="bg item ">
+                    <h2 class="c-heading animate__animated animate__bounce" style="margin-top: 10%;">都蘭之美<span
+                        class="c-heading__inner"><span><br />人文地景</span></span></h2>
+                    <p class="text animate__fadeInLeft animate__animated">
+                      都蘭社區的地理景觀亦是聞名暇耳，如：水往上流、都蘭鼻等....<br>社區文化潛藏著豐富的人文景像。如：都蘭糖廠舊址、都蘭文化遺址、都蘭林場、阿美文化工作團、廖勝義木雕工作室……等，均是相當值得探訪的人文資產。<br><br>
+                    </p>
+                    <p class="btn2"><a href="https://www.facebook.com/profile.php?id=100004672904154" target="_blank"class="c-btn">前進都蘭</a></p>
+                  </div>
+                  <br />
+                  <div class="item" style="text-align:center;max-height: 500px ;">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel"
+                        style="margin-top: 3%;" data-aos="fade-up-right" data-aos-duration="3000">
+                      <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                          <img src="https://pic.pimg.tw/yangbingyu/1416936329-540286655.jpg" class="d-block w-100 ">
+                        </div>
+                          <div class="carousel-item"style="">
+                            <img
+                              src="https://3.bp.blogspot.com/-439UNAMnZa4/V4L1xyz-kXI/AAAAAAAAN6Y/8orR2EjynIga1AsRVKw_rn41XcBdijq5QCKgB/s1600/3V8A2889.JPG"
+                              class=" d-block "style="max-width:100%;max-height:500px;">
+                          </div>
+                        <div class="carousel-item"style="">
+                          <img src="img/img00001.jpg" class="d-block " style="max-width:100%;max-height:500px;">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                      data-bs-slide="prev">
+                        <span class="" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>             
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+      
+            <!--智杰77 都蘭小房子-->
+            <article id="article5" class="article article5">
+              <div class="article-title">
+                <div class="container-fluid" style="Position:Relative">
+                  <div data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="main" data-aos="fade-up">
+                      <div class="row justify-content-between" id="j-background-color">
+                        <div class="col-md-6">
+                          <div class="p-top-shop__img p-top-contents__img figure" data-aos="zoom-out-left"
+                            data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf">                      
+                            <img class="animate__animated animate__slideInRight image-main"
+                              src="img/都蘭小房子.jpg" max-height="700" style="margin-top: 16px;">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="bg jtitle">
+                            <h2 class="c-heading animate__animated animate__bounce" data-aos="zoom-out-left" data-aos-anchor-placement="center-center" >
+                              都蘭景點<br>
+                              都蘭小房子
+                            </h2>
+                            <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-left" id="jtext">
+                              位於都蘭糖廠旁的特色早午餐，這裡主要輕食為主，開啟一天愉快的早晨時光。餐點全部都現做的，所以需要一些等候時間，大家等候時，可以跟店裡的小橘貓玩耍，或是逛逛都蘭糖廠的各個角落。這裡的裝飾自然而不造作，樸質棉線與魚網串成的燈罩、國小孰悉的課桌椅、老式木窗，主人家擅長利用現有的資源，妝點出屬於自己的風格，令人印象深刻。
+                            </h3>
+                              <p class="btn2">
+                                <a href="https://roxfungkimo.pixnet.net/blog/post/427076879" target="_blank" class="c-btn">更多資訊</a>
+                              </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article id="article3" class="article article3">
-        <div class="article-title">
-          <div class=""style="background-image: linear-gradient(rgb(169, 231, 252), rgba(223, 221, 202, 0.575));Position:Relative;display: flex;align-items:center;width: 100%;flex-wrap: wrap;"
-          data-aos="zoom-in" data-aos-duration="3000">
-            <div class="p-top-shop__img p-top-contents__img figure item" data-aos="fade-down-right"
-              data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf" style="margin-top:10vh;">
-              <img class="animate__animated animate__slideInRight image-main " src="img/img00002.jpg" max-height="700">
-              <img class="top animate__animated animate__slideInRight image-main"
-                src="https://www.eastcoast-nsa.gov.tw/image/30441/?r=1598946072791" max-height="700" />
-            </div>
-            <div class="bg item">
-              <h2 class="c-heading animate__animated animate__bounce " data-aos="fade-zoom-in" data-aos-dalay="3000"data-aos-anchor-placement="center-center">都蘭之美
-                <span class="c-heading__inner"><span><br />自然生態</span></span></h2>
-              <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-right"
-                data-aos-anchor-placement="center-bottom">
-                「如果你到都蘭這塊土地流浪，記得讓海帶走你的憂傷，讓山成為你的依靠。」<br>「都蘭」，是許多嚮往台東生活的旅人們，必定會造訪的村落，一邊望著遼闊的太平洋，轉向又是青翠的山巒相伴，在這裡，所有煩悶繫絆都將暫時拋開，我們只需單純地觀照自己身心靈的舒適感。<br>
-              </h3>
-              <p class="btn2"><a href="http://www.zztaitung.com/107/dolanandmoon" target="_blank"
-                  class="c-btn">前進都蘭</a></p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article id="article4" class="article article4">
-        <div class="article-title">
-          <div class=""style="justify-content: center;
-          align-items: center; background-image: linear-gradient(rgb(193, 226, 172), rgba(247, 242, 196, 0.842));Position:Relative;display: flex;align-items:center;flex-wrap: wrap;"
-          data-aos="zoom-in" data-aos-duration="3000">
-            <div class="bg item ">
-              <h2 class="c-heading animate__animated animate__bounce" style="margin-top: 10%;">都蘭之美<span
-                  class="c-heading__inner"><span><br />人文地景</span></span></h2>
-              <p class="text animate__fadeInLeft animate__animated">
-                都蘭社區的地理景觀亦是聞名暇耳，如：水往上流、都蘭鼻等....<br>社區文化潛藏著豐富的人文景像。如：都蘭糖廠舊址、都蘭文化遺址、都蘭林場、阿美文化工作團、廖勝義木雕工作室……等，均是相當值得探訪的人文資產。<br><br>
-              </p>
-              <p class="btn2"><a href="https://www.facebook.com/profile.php?id=100004672904154" target="_blank"class="c-btn">前進都蘭</a></p>
-            </div>
-            <br />
-            <div class="item" style="text-align:center;max-height: 500px ;">
-              <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel"
-                  style="margin-top: 3%;" data-aos="fade-up-right" data-aos-duration="3000">
-                <div class="carousel-inner ">
-                  <div class="carousel-item active">
-                    <img src="https://pic.pimg.tw/yangbingyu/1416936329-540286655.jpg" class="d-block w-100 ">
-                  </div>
-                    <div class="carousel-item"style="">
-                      <img
-                        src="https://3.bp.blogspot.com/-439UNAMnZa4/V4L1xyz-kXI/AAAAAAAAN6Y/8orR2EjynIga1AsRVKw_rn41XcBdijq5QCKgB/s1600/3V8A2889.JPG"
-                        class=" d-block "style="max-width:100%;max-height:500px;">
+            </article>
+      
+            <!--智杰77 都蘭天主堂-->
+            <article id="article6" class="article article6">
+              <div class="article-title">
+                <div class="container-fluid" style="Position:Relative">
+                  <div data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="main" data-aos="fade-up">
+                      <div class="row justify-content-between" id="j-background-color">
+                        <div class="col-md-6">
+                          <div class="p-top-shop__img p-top-contents__img figure" data-aos="zoom-out-left"
+                            data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf">              
+                            <img class="animate__animated animate__slideInRight image-main"
+                              src="img/都蘭天主堂.jpg" max-height="700" style="margin-top: 16px;">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="bg">
+                            <h2 class="c-heading animate__animated animate__bounce" data-aos="zoom-out-left" data-aos-anchor-placement="center-center" >
+                              都蘭景點<br>
+                              都蘭天主堂
+                            </h2>
+                            <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-left" id="jtext">
+                              是一座較年輕的教堂，這座教堂成立於2003年，是由傅義修士所設計的教堂，仿船型的設計，看到都蘭天主堂，就會想到諾亞方舟，其實這座教堂設計之創意來源，據說真的取意諾亞方舟，象徵教堂乃引人得救之所。在寧靜的都蘭村落裡，十分吸引旅人的目光，有機會來到都蘭，不妨順道來這邊散散步，除了感受教堂之美，也能讓心情澄靜，為台東之旅留下更美好的回憶。
+                            </h3>
+                              <p class="btn2">
+                                <a href="https://roxfungkimo.pixnet.net/blog/post/427076879" target="_blank" class="c-btn">更多資訊</a>
+                              </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  <div class="carousel-item"style="">
-                    <img src="img/img00001.jpg" class="d-block " style="max-width:100%;max-height:500px;">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                  <span class="" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                  data-bs-slide="next">
-                  <span class="" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>             
               </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!--智杰77 都蘭小房子-->
-      <article id="article5" class="article article5">
-        <div class="article-title">
-          <div class="container-fluid" style="Position:Relative">
-            <div data-aos="zoom-in" data-aos-duration="3000">
-              <div class="main" data-aos="fade-up">
-                <div class="row justify-content-between" id="j-background-color">
-                  <div class="col-md-6">
-                    <div class="p-top-shop__img p-top-contents__img figure" data-aos="zoom-out-left"
-                      data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf">                      
-                      <img class="animate__animated animate__slideInRight image-main"
-                        src="img/都蘭小房子.jpg" max-height="700" style="margin-top: 16px;">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="bg jtitle">
-                      <h2 class="c-heading animate__animated animate__bounce" data-aos="zoom-out-left" data-aos-anchor-placement="center-center" >
-                        都蘭景點<br>
-                        都蘭小房子
-                      </h2>
-                      <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-left" id="jtext">
-                        位於都蘭糖廠旁的特色早午餐，這裡主要輕食為主，開啟一天愉快的早晨時光。餐點全部都現做的，所以需要一些等候時間，大家等候時，可以跟店裡的小橘貓玩耍，或是逛逛都蘭糖廠的各個角落。這裡的裝飾自然而不造作，樸質棉線與魚網串成的燈罩、國小孰悉的課桌椅、老式木窗，主人家擅長利用現有的資源，妝點出屬於自己的風格，令人印象深刻。
-                      </h3>
-                        <p class="btn2">
-                          <a href="https://roxfungkimo.pixnet.net/blog/post/427076879" target="_blank" class="c-btn">更多資訊</a>
+            </article>
+      
+            <article id="article7" class="article article7">
+              <div class="article-title">
+                <!-- footer -->
+                <footer class="bg-dark text-white pt-5 pb-4">
+                  <div class="container text-center">
+                    <div class="row text-center align-items-center text-md-start">
+                      <!-- how to get there -->
+                      <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+                        <p>
+                          <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
+                          <i class="fas fas fa-map-marker-alt">
+                            <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528"
+                              target="_blank">
+                              點我導航
+                            </a>
+                          </i>
                         </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!--智杰77 都蘭天主堂-->
-      <article id="article6" class="article article6">
-        <div class="article-title">
-          <div class="container-fluid" style="Position:Relative">
-            <div data-aos="zoom-in" data-aos-duration="3000">
-              <div class="main" data-aos="fade-up">
-                <div class="row justify-content-between" id="j-background-color">
-                  <div class="col-md-6">
-                    <div class="p-top-shop__img p-top-contents__img figure" data-aos="zoom-out-left"
-                      data-aos-anchor-placement="center-bottom" data-aos-dalay="3000" id="cf">              
-                      <img class="animate__animated animate__slideInRight image-main"
-                        src="img/都蘭天主堂.jpg" max-height="700" style="margin-top: 16px;">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="bg">
-                      <h2 class="c-heading animate__animated animate__bounce" data-aos="zoom-out-left" data-aos-anchor-placement="center-center" >
-                        都蘭景點<br>
-                        都蘭天主堂
-                      </h2>
-                      <h3 class="text animate__fadeInLeft animate__animated" data-aos="zoom-out-left" id="jtext">
-                        是一座較年輕的教堂，這座教堂成立於2003年，是由傅義修士所設計的教堂，仿船型的設計，看到都蘭天主堂，就會想到諾亞方舟，其實這座教堂設計之創意來源，據說真的取意諾亞方舟，象徵教堂乃引人得救之所。在寧靜的都蘭村落裡，十分吸引旅人的目光，有機會來到都蘭，不妨順道來這邊散散步，除了感受教堂之美，也能讓心情澄靜，為台東之旅留下更美好的回憶。
-                      </h3>
-                        <p class="btn2">
-                          <a href="https://roxfungkimo.pixnet.net/blog/post/427076879" target="_blank" class="c-btn">更多資訊</a>
+                        <p>
+                          <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
                         </p>
+                        <p>
+                          <i class="fas fa-phone mr-3"></i> +886 89531864
+                        </p>
+                        <p>
+                          <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/"
+                            target="_blank">https://www.atolan-style.com/</a>
+                        </p>
+                      </div>
+                      <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3 ratio ratio-16x9">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="row align-items-center">
+                      <div class="col-md-7 col-lg-8">
+                        <p class="text-lg-start">
+                          Copyright 2022 All rights reserved by:
+                          <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning text-wrap badge fs-6">The FiveSeven</strong>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                      <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-end">
+                          <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                              <a href="https://www.facebook.com/atolan.malakapahay" target="_blank"
+                                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.instagram.com/atolan_style/" target="_blank"
+                                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank"
+                                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </footer>
               </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
+          </section>
 
-      <article id="article7" class="article article7">
-        <div class="article-title">
-          <!-- footer -->
-          <footer class="bg-dark text-white pt-5 pb-4">
-            <div class="container text-center">
-              <div class="row text-center align-items-center text-md-start">
-                <!-- how to get there -->
-                <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
-                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
-                  <p>
-                    <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
-                    <i class="fas fas fa-map-marker-alt">
-                      <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528"
-                        target="_blank">
-                        點我導航
-                      </a>
-                    </i>
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
-                  </p>
-                  <p>
-                    <i class="fas fa-phone mr-3"></i> +886 89531864
-                  </p>
-                  <p>
-                    <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/"
-                      target="_blank">https://www.atolan-style.com/</a>
-                  </p>
-                </div>
-                <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3 ratio ratio-16x9">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-              <hr class="mb-4">
-              <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                  <p class="text-lg-start">
-                    Copyright 2022 All rights reserved by:
-                    <a href="#" style="text-decoration: none;">
-                      <strong class="text-warning text-wrap badge fs-6">The FiveSeven</strong>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                    </a>
-                  </p>
-                </div>
-                <div class="col-md-5 col-lg-4">
-                  <div class="text-center text-md-end">
-                    <ul class="list-unstyled list-inline">
-                      <li class="list-inline-item">
-                        <a href="https://www.facebook.com/atolan.malakapahay" target="_blank"
-                          class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="https://www.instagram.com/atolan_style/" target="_blank"
-                          class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank"
-                          class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
         </div>
-      </article>
-    </section>
+
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          
+          <!-- 給左側導覽列 -->
+          <nav id="nav" class="position-fixed top-0 start-0 h-100 d-flex align-items-center ms-4">
+            <ul class="nav nav-mine002 flex-column">
+              <li class="nav-item mb-2"><a href="#article8" class="nav-link active"></a></li>
+              <li class="nav-item mb-2"><a href="#article9" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article10" class="nav-link"></a></li>
+              <li class="nav-item mb-2"><a href="#article11" class="nav-link"></a></li>
+            </ul>
+          </nav>
+
+          <!-- 給section -->
+          <section>
+            <!-- article1 -->
+            <article id="article8" class="article article8">
+              <div class="article-title">
+                <!-- carousel -->
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <!-- 輪播提示 -->
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                  </ol>
+                  <!-- 輪播內容 -->
+                  <div class="carousel-inner">
+                    <dvi class="carousel-item active">
+                      <img src="img/carousel001.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                        <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">都蘭國</h5>
+                      </div>
+                    </dvi>
+                    <dvi class="carousel-item">
+                      <img src="img/carousel004.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                        <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">新東糖廠文化園區</h5>
+                      </div>
+                    </dvi>
+      
+                    <dvi class="carousel-item">
+                      <img src="img/carousel006.jpg" class="d-block w-100" alt="">
+                      <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
+                        <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">恩娜比亞咖啡</h5>
+                      </div>
+                    </dvi>
+                  </div>
+                  <!-- 輪播控制 -->
+                  <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+      
+            <!-- article22 -->
+            <article id="article9" class="article article9">
+              <div class="article-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam perferendis modi a? Enim vero explicabo, sed quos sint eaque aspernatur earum, suscipit ducimus eos voluptatibus atque tempore vel quibusdam! Fuga magni ducimus sed mollitia qui nisi architecto autem nemo consectetur explicabo doloremque ratione saepe facilis, obcaecati sequi? Voluptatem, ipsa eius. Quibusdam minima nam corrupti, dicta veniam maxime sunt officiis fuga nostrum error atque magnam aliquam libero deserunt sequi ipsum tenetur temporibus incidunt! Aliquid autem sed dolor earum, maiores, nihil exercitationem quisquam ducimus nesciunt amet ipsum facilis odit! Numquam distinctio repellendus iste delectus veritatis voluptate debitis adipisci, velit nostrum explicabo soluta minima commodi cum et voluptas ex ipsum quas dolor sapiente? Perspiciatis quasi repudiandae aliquam dolorem exercitationem, perferendis, sed aperiam consectetur voluptatibus, amet voluptate labore. Accusantium ex, illo culpa, iure, officiis fuga corporis minus ducimus error consectetur itaque sunt quidem enim hic repellendus magnam minima quibusdam rem numquam voluptatem mollitia ea amet quam. Impedit quaerat velit quibusdam debitis eveniet odio fuga aspernatur, incidunt corporis laboriosam expedita, alias in magni unde, excepturi iure? Aspernatur ipsam tempore architecto quisquam sunt quidem officiis perferendis vel est dicta, accusamus porro repellendus quibusdam esse nesciunt soluta dolorum molestias beatae! Soluta non voluptatem quaerat deserunt eveniet perspiciatis sint vitae, at exercitationem quos facere recusandae eum quasi modi veniam pariatur earum corporis vel ratione animi. Aut facere, saepe et debitis explicabo, veritatis deleniti officia in consequatur, repellendus adipisci magni ea aliquid minima reprehenderit neque quos dignissimos dolorem. Asperiores iste ullam facilis ratione ipsum in temporibus enim odio exercitationem, nulla minus obcaecati nesciunt nam repellat expedita neque ipsam pariatur vitae cumque vel odit voluptate. Id a, ea doloribus, adipisci voluptatibus consectetur facilis harum laudantium laborum doloremque, molestias exercitationem nostrum tempore libero officiis magnam! Recusandae nam sapiente sequi eveniet perspiciatis veritatis quis fuga sit libero eligendi itaque molestiae aliquid voluptate eum nostrum quo, ducimus excepturi? Doloribus quam porro illo dolores autem rerum vitae voluptate nemo, consequuntur nam iste aut velit necessitatibus ut quis quos exercitationem expedita natus atque. Nihil quo iste commodi. Cupiditate, deserunt autem exercitationem reiciendis non nulla quisquam recusandae rem eligendi! Qui deserunt commodi quidem, sed ex ea eaque odit consectetur, ratione, enim alias eos a exercitationem obcaecati delectus cupiditate. Quia placeat, consequatur minus quas dolores excepturi similique? Fugit earum quia, nulla iste voluptate voluptas! Nesciunt dolores iusto, commodi dolorum a ut quisquam aliquid saepe nihil perferendis culpa, dolorem eligendi natus pariatur adipisci. Quos esse dignissimos ipsum aperiam saepe commodi nesciunt deserunt asperiores cum excepturi sint aliquid, earum vel impedit dolorem rerum quisquam quod. Minus, esse officia ea libero perspiciatis sint quod voluptatum cum tempore sunt vel at soluta impedit maiores ex dolore. Nesciunt eos laboriosam quam unde nobis sit reiciendis sint tenetur magnam voluptate maiores, optio soluta. At rem similique eius. Sit optio suscipit a molestias ratione deleniti id nisi? Laboriosam labore praesentium dolores odio itaque, quasi tempora blanditiis, explicabo, soluta eius sed cum adipisci tempore esse tenetur veniam illo impedit ipsam repellat sapiente dolorum optio voluptatem molestias? Laborum maxime, rem soluta eius provident nihil fugit?
+              </div>
+            </article>
+
+            <!-- article22 -->
+            <article id="article10" class="article article10">
+              <div class="article-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam perferendis modi a? Enim vero explicabo, sed quos sint eaque aspernatur earum, suscipit ducimus eos voluptatibus atque tempore vel quibusdam! Fuga magni ducimus sed mollitia qui nisi architecto autem nemo consectetur explicabo doloremque ratione saepe facilis, obcaecati sequi? Voluptatem, ipsa eius. Quibusdam minima nam corrupti, dicta veniam maxime sunt officiis fuga nostrum error atque magnam aliquam libero deserunt sequi ipsum tenetur temporibus incidunt! Aliquid autem sed dolor earum, maiores, nihil exercitationem quisquam ducimus nesciunt amet ipsum facilis odit! Numquam distinctio repellendus iste delectus veritatis voluptate debitis adipisci, velit nostrum explicabo soluta minima commodi cum et voluptas ex ipsum quas dolor sapiente? Perspiciatis quasi repudiandae aliquam dolorem exercitationem, perferendis, sed aperiam consectetur voluptatibus, amet voluptate labore. Accusantium ex, illo culpa, iure, officiis fuga corporis minus ducimus error consectetur itaque sunt quidem enim hic repellendus magnam minima quibusdam rem numquam voluptatem mollitia ea amet quam. Impedit quaerat velit quibusdam debitis eveniet odio fuga aspernatur, incidunt corporis laboriosam expedita, alias in magni unde, excepturi iure? Aspernatur ipsam tempore architecto quisquam sunt quidem officiis perferendis vel est dicta, accusamus porro repellendus quibusdam esse nesciunt soluta dolorum molestias beatae! Soluta non voluptatem quaerat deserunt eveniet perspiciatis sint vitae, at exercitationem quos facere recusandae eum quasi modi veniam pariatur earum corporis vel ratione animi. Aut facere, saepe et debitis explicabo, veritatis deleniti officia in consequatur, repellendus adipisci magni ea aliquid minima reprehenderit neque quos dignissimos dolorem. Asperiores iste ullam facilis ratione ipsum in temporibus enim odio exercitationem, nulla minus obcaecati nesciunt nam repellat expedita neque ipsam pariatur vitae cumque vel odit voluptate. Id a, ea doloribus, adipisci voluptatibus consectetur facilis harum laudantium laborum doloremque, molestias exercitationem nostrum tempore libero officiis magnam! Recusandae nam sapiente sequi eveniet perspiciatis veritatis quis fuga sit libero eligendi itaque molestiae aliquid voluptate eum nostrum quo, ducimus excepturi? Doloribus quam porro illo dolores autem rerum vitae voluptate nemo, consequuntur nam iste aut velit necessitatibus ut quis quos exercitationem expedita natus atque. Nihil quo iste commodi. Cupiditate, deserunt autem exercitationem reiciendis non nulla quisquam recusandae rem eligendi! Qui deserunt commodi quidem, sed ex ea eaque odit consectetur, ratione, enim alias eos a exercitationem obcaecati delectus cupiditate. Quia placeat, consequatur minus quas dolores excepturi similique? Fugit earum quia, nulla iste voluptate voluptas! Nesciunt dolores iusto, commodi dolorum a ut quisquam aliquid saepe nihil perferendis culpa, dolorem eligendi natus pariatur adipisci. Quos esse dignissimos ipsum aperiam saepe commodi nesciunt deserunt asperiores cum excepturi sint aliquid, earum vel impedit dolorem rerum quisquam quod. Minus, esse officia ea libero perspiciatis sint quod voluptatum cum tempore sunt vel at soluta impedit maiores ex dolore. Nesciunt eos laboriosam quam unde nobis sit reiciendis sint tenetur magnam voluptate maiores, optio soluta. At rem similique eius. Sit optio suscipit a molestias ratione deleniti id nisi? Laboriosam labore praesentium dolores odio itaque, quasi tempora blanditiis, explicabo, soluta eius sed cum adipisci tempore esse tenetur veniam illo impedit ipsam repellat sapiente dolorum optio voluptatem molestias? Laborum maxime, rem soluta eius provident nihil fugit?
+              </div>
+            </article>
+            
+      
+            <article id="article11" class="article article11">
+              <div class="article-title">
+                <!-- footer -->
+                <footer class="bg-dark text-white pt-5 pb-4">
+                  <div class="container text-center">
+                    <div class="row text-center align-items-center text-md-start">
+                      <!-- how to get there -->
+                      <div class="col-md-5 col-lg-4 col-xl-6 mx-auto mt-3 ">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">如何到這裡</h5>
+                        <p>
+                          <i class="fas fa-home mr-3"></i> 959台東縣東河鄉29鄰224號
+                          <i class="fas fas fa-map-marker-alt">
+                            <a href="https://www.google.com/maps/dir//%E9%83%BD%E8%98%AD%E5%9C%8B%E5%85%A5%E5%A2%83%E5%A4%A7%E5%BB%B3+959%E5%8F%B0%E6%9D%B1%E7%B8%A3%E6%9D%B1%E6%B2%B3%E9%84%8929%E9%84%B0224%E8%99%9F/@22.8754528,121.228433,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x346fa3d08173aae7:0xe35d60f8ddfa144!2m2!1d121.228433!2d22.8754528"
+                              target="_blank">
+                              點我導航
+                            </a>
+                          </i>
+                        </p>
+                        <p>
+                          <i class="fas fa-envelope mr-3"></i> atolanstyle@gmail.com
+                        </p>
+                        <p>
+                          <i class="fas fa-phone mr-3"></i> +886 89531864
+                        </p>
+                        <p>
+                          <i class="fas fas fa-globe mr-3"></i> <a href="https://www.atolan-style.com/"
+                            target="_blank">https://www.atolan-style.com/</a>
+                        </p>
+                      </div>
+                      <div class="col-md-7 col-lg-8 col-xl-6 mx-auto mt-3 ratio ratio-16x9">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.242670143623!2d121.1884144398365!3d22.87995517604608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fa3d08173aae7%3A0xe35d60f8ddfa144!2z6YO96Jit5ZyL5YWl5aKD5aSn5buz!5e0!3m2!1szh-TW!2stw!4v1655104523209!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="row align-items-center">
+                      <div class="col-md-7 col-lg-8">
+                        <p class="text-lg-start">
+                          Copyright 2022 All rights reserved by:
+                          <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning text-wrap badge fs-6">The FiveSeven</strong>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                      <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-end">
+                          <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                              <a href="https://www.facebook.com/atolan.malakapahay" target="_blank"
+                                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.instagram.com/atolan_style/" target="_blank"
+                                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.youtube.com/channel/UCvCtGckIoMkTTtT6rQgmeSQ" target="_blank"
+                                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </article>
+          </section>
+
+        </div>
+
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          
+          789
+
+        </div>
+
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+          
+          1234
+
+        </div>
+      </div>
+    </div>
+    
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="https://upload.cc/i1/2022/05/18/F5olXI.png" alt="" width="30" height="24"
@@ -763,10 +1043,10 @@
           </form>
         </div>
       </div>
-    </nav>
+    </nav> -->
     
     <!-- 回首頁按鈕 -->
-    <div style="position: fixed; right: 0px; bottom: 5px;">
+    <div style="position: fixed; right: 0px; bottom: 5px; z-index: 3;">
       <a href="#">
         <img class="btn btn-light" data-toggle="tooltip" src="https://upload.cc/i1/2022/05/18/F5olXI.png"  title="我是可以回到頁首的可愛麵包">
       </a>
