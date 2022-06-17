@@ -434,6 +434,11 @@ nav {
     padding-bottom:50vh;
   }
 }
+@media screen and (max-height: 820px) {
+  #cf {
+    margin-bottom:20%;
+  }
+}
 * { box-sizing: border-box; }
 /* 昭的結束 */
 
