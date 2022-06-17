@@ -325,7 +325,7 @@ nav {
   border-radius: 5px;
 }
 .nav-mine003 li:nth-child(2):hover::before {
-  content: "都蘭店家3";
+  content: "都蘭美食";
   position: absolute;
   width: max-content;
   left: 40px;
@@ -338,7 +338,7 @@ nav {
 }
 
 .nav-mine003 li:nth-child(3):hover::before {
-  content: "都蘭店家4";
+  content: "都蘭手工品";
   position: absolute;
   width: max-content;
   left: 40px;
