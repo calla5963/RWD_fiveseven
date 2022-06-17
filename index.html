@@ -114,38 +114,38 @@
               </ol>
               <!-- 輪播內容 -->
               <div class="carousel-inner">
-                <dvi class="carousel-item active">
+                <div class="carousel-item active">
                   <img src="img/carousel001.jpg" class="d-block w-100" alt="">
                   <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
                     <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">都蘭國</h5>
                   </div>
-                </dvi>
-                <dvi class="carousel-item">
+                </div>
+                <div class="carousel-item">
                   <img src="img/carousel004.jpg" class="d-block w-100" alt="">
                   <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
                     <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">新東糖廠文化園區</h5>
                   </div>
-                </dvi>
+                </div>
 
-                <dvi class="carousel-item">
+                <div class="carousel-item">
                   <img src="img/carousel006.jpg" class="d-block w-100" alt="">
                   <div class="carousel-caption .d-none .d-md-block .d-xl-none .d-xxl-none">
                     <h5 class="fs-4 m-auto" style="background-color: rgba(0, 0, 0, .4);">恩娜比亞咖啡</h5>
                   </div>
-                </dvi>
-              </div>
-              <!-- 輪播控制 -->
-              <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
+                </div>
+                <!-- 輪播控制 -->
+                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
         <article id="article2" class="article article2">
           <div class="article-title">
@@ -439,6 +439,12 @@
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+    <!-- popover  -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
       });
     </script>
     

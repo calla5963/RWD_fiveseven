@@ -79,7 +79,6 @@
     position: relative;
     /*  font-size: calc(1.525rem + 3.3vw);  測試 */
     color: white;
-    padding-top: 50px;
   }
   .masthead h3 {
     position: relative;
@@ -100,7 +99,6 @@
     position: relative;
     /*  font-size: calc(1.525rem + 3.3vw);  測試 */
     color: white;
-    padding-top: 50px;
   }
   .masthead h3 {
     position: relative;
@@ -446,36 +444,29 @@ nav {
   display: flex;
   background-image: linear-gradient(rgb(171, 201, 233), rgba(227, 179, 242, 0.632));
 }
-.jtext{
+#jtext{
   margin-top: 8px;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 2.5;
   letter-spacing: 0.15em;
 }
-.jtitle {
+
+@media screen and (max-width: 768px) {
+  .jtitle {
   max-width: 100%;
-  padding: 60px 40px 0;
+  padding: 110px 40px 0;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .sm-jtitle {
-    text-align: center;
-    font-size: 40px;
-    margin: auto 0 0;
-  }
-  .sm-jtext {
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 20px 0 0;
-  }
 }
+
 .jbcakgroud {
   width: 100%;
   max-width: auto;
   margin:auto auto;
 
 }
+
 /* j part */ 
 
 /* scrollspy article */
