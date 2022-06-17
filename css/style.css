@@ -20,7 +20,6 @@
 }
 
 
-/* 0616 */
 /* carousel */
 #myCarousel {
   z-index: 1;
@@ -39,6 +38,15 @@
   min-height: 600px;
   max-height: 768px;
   margin-top: -200px;
+  object-fit: cover;
+}
+/* carousel003 */
+#myCarousel003 {
+  z-index: 1;
+}
+#myCarousel003 .carousel-item img {
+  min-height: 600px;
+  max-height: 768px;
   object-fit: cover;
 }
 
