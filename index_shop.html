@@ -1,7 +1,6 @@
 
-  <!doctype html>
+<!doctype html>
   <html lang="zh-tw">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,22 +11,28 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="jquery-3.6.0.min.js"></script> -->
       
-    <!-- kit's icon -->
-    <script src="https://kit.fontawesome.com/c08c74e4f8.js" crossorigin="anonymous"></script>
+    <!-- bootstrap5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
 
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!------->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- kit's icon -->
+    <script src="https://kit.fontawesome.com/c08c74e4f8.js" crossorigin="anonymous"></script>
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- icon -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- fiveseven's css -->
     <link href="css/style.css" rel="stylesheet">
@@ -37,7 +42,7 @@
     
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 start-0 w-100" id="myTab" role="tablist">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 w-100" id="myTab" role="tablist">
       <div class="container">
         <a class="navbar-brand d-lg-none" href="#">
           都蘭村
@@ -58,28 +63,18 @@
               都蘭村
             </a>
             <ul class="navbar-nav nav-pills mt-2">
-
+              
               <li class="nav-item d-flex align-items-center" role="presentation">
-                <l class="fas fa-user"></l>
-                <a href="./index.html" class="btn btn-outline-primary ">
+                <i class="bi bi-card-image"></i>
+                <a href="./index.html" class="btn btn-outline-primary ms-1">
                   都蘭人文與自然風然
                 </a>
               </li>
-              <li class="nav-item d-flex align-items-center" role="presentation">
+              <li class="nav-item d-flex align-items-center ms-1" role="presentation">
                 <l class="fas fa-user"></l>
-                <a href="./index_shop.html" class="btn btn-outline-primary ">
+                <a href="./index_shop.html" class="btn btn-outline-success ms-1">
                   都蘭店家
                 </a>
-              </li>
-
-              <li class="nav-item d-flex align-items-center">
-                <a class="nav-link mx-2" href="#">
-                  <i class="fas fa-shopping-bag"></i>
-                  Bag
-                </a>
-                <span class="badge rounded-pill bg-secondary">
-                  0
-                </span>
               </li>
             </ul>
           </div>
@@ -267,7 +262,6 @@
         $('[data-toggle="tooltip"]').tooltip()
       });
     </script>
-
     
   </body>
 </html>
