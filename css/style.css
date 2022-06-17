@@ -301,6 +301,83 @@ nav {
   filter: grayscale(1);
   transition: all .5s;
 }
+
+/* page第三頁 */
+.nav-mine003 li {
+  position: relative;
+}
+.nav-mine003 li.active a::after {
+  height: 80px;
+  opacity: 1;
+  margin: 8px auto;
+}
+
+.nav-mine003 li:nth-child(1):hover::before {
+  content: "都蘭之美";
+  position: absolute;
+  width: max-content;
+  left: 40px;
+  top: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 4px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.nav-mine003 li:nth-child(2):hover::before {
+  content: "都蘭店家3";
+  position: absolute;
+  width: max-content;
+  left: 40px;
+  top: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 4px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.nav-mine003 li:nth-child(3):hover::before {
+  content: "都蘭店家4";
+  position: absolute;
+  width: max-content;
+  left: 40px;
+  top: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 4px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.nav-mine003 li:nth-child(4):hover::before {
+  content: "頁尾";
+  position: absolute;
+  width: max-content;
+  left: 40px;
+  top: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 4px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.nav-mine003 .nav-link {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  clip-path: circle(50% at 50% 50%);
+}
+.nav-mine003 .active{
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  content: "";
+  background: url('https://upload.cc/i1/2022/06/17/xMGwlr.gif') center center;
+  filter: grayscale(1);
+  transition: all .5s;
+}
 /* 以上nav */
 
 
