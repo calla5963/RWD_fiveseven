@@ -537,9 +537,13 @@ nav {
 
 
 /* j part*/
-#j-background-color{
+#j-background-color1{
   display: flex;
-  background-image: linear-gradient(rgb(171, 201, 233), rgba(227, 179, 242, 0.632));
+  background-image: linear-gradient(rgb(171, 201, 233), rgba(227, 179, 242, 0.499));
+}
+#j-background-color2{
+  display: flex;
+  background-image: linear-gradient(rgb(171, 213, 250), rgb(255, 255, 255));
 }
 .text{
   margin-top: 8px;
@@ -570,6 +574,13 @@ nav {
   max-width: auto;
   margin:auto auto;
 
+}
+.c{
+  margin: 5% 0 0 0;
+  position: relative;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* j part */ 
