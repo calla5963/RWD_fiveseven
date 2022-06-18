@@ -53,7 +53,7 @@
         <div class="collapse navbar-collapse p-2 flex-column s" id="navbarContent">
           <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search">
+              <input class="form-control me-2" type="search" id="search-item" placeholder="Search" onkeyup="search()">
               <button class="btn btn-outline-dark" type="submit">
                 <i class="fas fa-search"></i>
               </button>
@@ -202,7 +202,7 @@
 
 
                 <!-- Tab panes -->
-                <div class="col col-9">
+                <div class="col col-9" id="product-list">
                   <div class="tab-content">
                     <div class="tab-pane active" id="food1" role="tabpanel" aria-labelledby="food1-tab" tabindex="0">
                       
