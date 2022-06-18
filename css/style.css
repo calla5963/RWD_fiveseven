@@ -49,6 +49,13 @@
   max-height: 768px;
   object-fit: cover;
 }
+@media screen and (max-width: 500px) {
+  #myCarousel003 .carousel-item .page3_banner1{
+
+    /* background-attachment: fixed; */
+    background-position: 100% 100%;
+  }
+}
 
 /* 俊彥的history */
 .masthead {
