@@ -288,6 +288,18 @@ nav {
   border-radius: 5px;
 }
 .nav-mine002 li:nth-child(4):hover::before {
+  content: "都蘭踏青";
+  position: absolute;
+  width: max-content;
+  left: 40px;
+  top: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 4px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.nav-mine002 li:nth-child(5):hover::before {
   content: "頁尾";
   position: absolute;
   width: max-content;
